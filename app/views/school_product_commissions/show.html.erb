@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>School:</strong>
+  <%= @school_product_commission.school %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @school_product_commission.product_id %>
+</p>
+
+<p>
+  <strong>Commission:</strong>
+  <%= @school_product_commission.commission %>
+</p>
+
+<%= link_to 'Edit', edit_school_product_commission_path(@school_product_commission) %> |
+<%= link_to 'Back', school_product_commissions_path %>

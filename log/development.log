@@ -1,0 +1,168 @@
+Started GET "/" for ::1 at 2017-11-21 23:32:12 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bagavathi/.rvm/gems/ruby-2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bagavathi/.rvm/gems/ruby-2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (9.5ms)
+Completed 200 OK in 581ms (Views: 26.9ms)
+
+
+  [1m[35m (8.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (36.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT GET_LOCK(5372915627440493475, 0)[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateStudents (20171121180712)
+  [1m[35m (22.2ms)[0m  [1m[35mCREATE TABLE `students` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20171121180712')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-11-21 18:09:45', '2017-11-21 18:09:45')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(5372915627440493475)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2017-11-21 23:40:16 +0530
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StudentsController#index as HTML
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `set_shopify' for #<StudentsController:0x007fbf2c33b380>
+Did you mean?  set_shoppify):
+  
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2017-11-21 23:40:57 +0530
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StudentsController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::API_KEY):
+  
+app/controllers/application_controller.rb:6:in `set_shopify'
+Started GET "/" for ::1 at 2017-11-22 00:03:11 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StudentsController#index as HTML
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (dlopen(/Users/bagavathi/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/x86_64-darwin14/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.6.dylib
+  Referenced from: /Users/bagavathi/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/x86_64-darwin14/readline.bundle
+  Reason: image not found - /Users/bagavathi/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/x86_64-darwin14/readline.bundle):
+  
+app/controllers/application_controller.rb:9:in `set_shopify'
+Started GET "/" for ::1 at 2017-11-22 00:10:04 +0530
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StudentsController#index as HTML
+https://b55b604e50afa1abefd9168c142719e4:bc4c2f00b1049aeb0c63e37b77b9bb81@schoolsay.myshopify.com/admin__
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  Rendered students/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 3893ms (Views: 1377.1ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/" for ::1 at 2017-11-22 00:13:16 +0530
+Processing by StudentsController#index as HTML
+https://b55b604e50afa1abefd9168c142719e4:bc4c2f00b1049aeb0c63e37b77b9bb81@schoolsay.myshopify.com/admin__ShopifyAPI::Base
+#<ShopifyAPI::Shop:0x007ff494b88c70>
+[#<ShopifyAPI::Product:0x007ff491cb9ae8 @attributes={"id"=>421001756714, "title"=>"FIRST 100 FG ADULT DRY PITCHES FOOTBALL BOOTS - BLACK/WHITE", "body_html"=>"", "vendor"=>"Schoolay", "product_type"=>"", "created_at"=>"2017-11-20T23:10:34+05:30", "handle"=>"first-100-fg-adult-dry-pitches-football-boots-black-white", "updated_at"=>"2017-11-20T23:10:37+05:30", "published_at"=>"2017-11-20T23:05:57+05:30", "template_suffix"=>nil, "published_scope"=>"global", "tags"=>"", "variants"=>[#<ShopifyAPI::Variant:0x007ff491caa430 @attributes={"id"=>6456532303914, "title"=>"uk5.5", "price"=>"1499.00", "sku"=>"", "position"=>1, "inventory_policy"=>"deny", "compare_at_price"=>nil, "fulfillment_service"=>"manual", "inventory_management"=>nil, "option1"=>"uk5.5", "option2"=>nil, "option3"=>nil, "created_at"=>"2017-11-20T23:10:34+05:30", "updated_at"=>"2017-11-20T23:10:34+05:30", "taxable"=>true, "barcode"=>"", "grams"=>0, "image_id"=>nil, "inventory_quantity"=>1, "weight"=>0.0, "weight_unit"=>"kg", "old_inventory_quantity"=>1, "requires_shipping"=>true}, @prefix_options={:product_id=>421001756714}, @persisted=true>, #<ShopifyAPI::Variant:0x007ff491c98cf8 @attributes={"id"=>6456532336682, "title"=>"uk6", "price"=>"1499.00", "sku"=>"", "position"=>2, "inventory_policy"=>"deny", "compare_at_price"=>nil, "fulfillment_service"=>"manual", "inventory_management"=>nil, "option1"=>"uk6", "option2"=>nil, "option3"=>nil, "created_at"=>"2017-11-20T23:10:34+05:30", "updated_at"=>"2017-11-20T23:10:34+05:30", "taxable"=>true, "barcode"=>"", "grams"=>0, "image_id"=>nil, "inventory_quantity"=>0, "weight"=>0.0, "weight_unit"=>"kg", "old_inventory_quantity"=>0, "requires_shipping"=>true}, @prefix_options={:product_id=>421001756714}, @persisted=true>], "options"=>[#<ShopifyAPI::Option:0x007ff49220b118 @attributes={"id"=>671985893418, "product_id"=>421001756714, "name"=>"Size", "position"=>1, "values"=>["uk5.5", "uk6"]}, @prefix_options={}, @persisted=true>], "images"=>[#<ShopifyAPI::Image:0x007ff492209048 @attributes={"id"=>1504477610026, "position"=>1, "created_at"=>"2017-11-20T23:10:37+05:30", "updated_at"=>"2017-11-20T23:10:37+05:30", "width"=>800, "height"=>800, "src"=>"https://cdn.shopify.com/s/files/1/2559/7184/products/2a2912_1867482b24444ab690139e4af0a4c204_mv2.jpg?v=1511199637", "variant_ids"=>[]}, @prefix_options={:product_id=>421001756714}, @persisted=true>], "image"=>#<ShopifyAPI::Image:0x007ff491c81198 @attributes={"id"=>1504477610026, "position"=>1, "created_at"=>"2017-11-20T23:10:37+05:30", "updated_at"=>"2017-11-20T23:10:37+05:30", "width"=>800, "height"=>800, "src"=>"https://cdn.shopify.com/s/files/1/2559/7184/products/2a2912_1867482b24444ab690139e4af0a4c204_mv2.jpg?v=1511199637", "variant_ids"=>[]}, @prefix_options={:product_id=>421001756714}, @persisted=true>}, @prefix_options={}, @persisted=true>]
+[#<ShopifyAPI::Customer:0x007ff49308ad88 @attributes={"id"=>231280377898, "email"=>"bagavathi1804@gmail.com", "accepts_marketing"=>false, "created_at"=>"2017-11-21T07:28:56+05:30", "updated_at"=>"2017-11-21T07:28:56+05:30", "first_name"=>"Bagavathi", "last_name"=>"t", "orders_count"=>0, "state"=>"enabled", "total_spent"=>"0.00", "last_order_id"=>nil, "note"=>nil, "verified_email"=>true, "multipass_identifier"=>nil, "tax_exempt"=>false, "phone"=>nil, "tags"=>"", "last_order_name"=>nil, "addresses"=>[]}, @prefix_options={}, @persisted=true>, #<ShopifyAPI::Customer:0x007ff491aeaf50 @attributes={"id"=>226408988714, "email"=>"bagavathisundaram@gmail.com", "accepts_marketing"=>false, "created_at"=>"2017-11-20T23:33:02+05:30", "updated_at"=>"2017-11-20T23:33:02+05:30", "first_name"=>"Bagavathi", "last_name"=>"t", "orders_count"=>0, "state"=>"disabled", "total_spent"=>"0.00", "last_order_id"=>nil, "note"=>nil, "verified_email"=>true, "multipass_identifier"=>nil, "tax_exempt"=>false, "phone"=>nil, "tags"=>"", "last_order_name"=>nil, "addresses"=>[#<ShopifyAPI::Address:0x007ff491a9b298 @attributes={"id"=>237224132650, "customer_id"=>226408988714, "first_name"=>"Bagavathi", "last_name"=>"t", "company"=>nil, "address1"=>"18,balaji nagar", "address2"=>"Reddiyarpatti", "city"=>"TIRUNELVELI", "province"=>"Tamil Nadu", "country"=>"India", "zip"=>"627007", "phone"=>nil, "name"=>"Bagavathi t", "province_code"=>"TN", "country_code"=>"IN", "country_name"=>"India", "default"=>true}, @prefix_options={}, @persisted=true>], "default_address"=>#<ShopifyAPI::Customer::DefaultAddress:0x007ff491a23ba8 @attributes={"id"=>237224132650, "customer_id"=>226408988714, "first_name"=>"Bagavathi", "last_name"=>"t", "company"=>nil, "address1"=>"18,balaji nagar", "address2"=>"Reddiyarpatti", "city"=>"TIRUNELVELI", "province"=>"Tamil Nadu", "country"=>"India", "zip"=>"627007", "phone"=>nil, "name"=>"Bagavathi t", "province_code"=>"TN", "country_code"=>"IN", "country_name"=>"India", "default"=>true}, @prefix_options={}, @persisted=true>}, @prefix_options={}, @persisted=true>]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  Rendered students/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 5316ms (Views: 99.1ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/" for ::1 at 2017-11-22 00:14:07 +0530
+Processing by StudentsController#index as HTML
+https://b55b604e50afa1abefd9168c142719e4:bc4c2f00b1049aeb0c63e37b77b9bb81@schoolsay.myshopify.com/admin__ShopifyAPI::Base
+#<ShopifyAPI::Shop:0x007ff497122eb8 @attributes={"id"=>25597184, "name"=>"Schoolay", "email"=>"bagavathisundaram@gmail.com", "domain"=>"schoolsay.myshopify.com", "created_at"=>"2017-11-17T22:00:17+05:30", "province"=>"Tamil Nadu", "country"=>"IN", "address1"=>"18,balaji nagar", "zip"=>"627007", "city"=>"TIRUNELVELI", "source"=>nil, "phone"=>"8220285491", "updated_at"=>"2017-11-20T23:32:21+05:30", "customer_email"=>nil, "latitude"=>8.681069599999999, "longitude"=>77.7360284, "primary_location_id"=>5020516394, "primary_locale"=>"en", "address2"=>"Reddiyarpatti", "country_code"=>"IN", "country_name"=>"India", "currency"=>"INR", "timezone"=>"(GMT+05:30) Asia/Calcutta", "iana_timezone"=>"Asia/Calcutta", "shop_owner"=>"Bagavathi sundaram t", "money_format"=>"Rs. {{amount}}", "money_with_currency_format"=>"Rs. {{amount}}", "weight_unit"=>"kg", "province_code"=>"TN", "taxes_included"=>false, "tax_shipping"=>nil, "county_taxes"=>true, "plan_display_name"=>"trial", "plan_name"=>"trial", "has_discounts"=>false, "has_gift_cards"=>false, "myshopify_domain"=>"schoolsay.myshopify.com", "google_apps_domain"=>nil, "google_apps_login_enabled"=>nil, "money_in_emails_format"=>"Rs. {{amount}}", "money_with_currency_in_emails_format"=>"Rs. {{amount}}", "eligible_for_payments"=>false, "requires_extra_payments_agreement"=>false, "password_enabled"=>true, "has_storefront"=>true, "eligible_for_card_reader_giveaway"=>false, "finances"=>true, "setup_required"=>false, "force_ssl"=>true}, @prefix_options={}, @persisted=true>
+[#<ShopifyAPI::Product:0x007ff4927bc5d0 @attributes={"id"=>421001756714, "title"=>"FIRST 100 FG ADULT DRY PITCHES FOOTBALL BOOTS - BLACK/WHITE", "body_html"=>"", "vendor"=>"Schoolay", "product_type"=>"", "created_at"=>"2017-11-20T23:10:34+05:30", "handle"=>"first-100-fg-adult-dry-pitches-football-boots-black-white", "updated_at"=>"2017-11-20T23:10:37+05:30", "published_at"=>"2017-11-20T23:05:57+05:30", "template_suffix"=>nil, "published_scope"=>"global", "tags"=>"", "variants"=>[#<ShopifyAPI::Variant:0x007ff4927adb20 @attributes={"id"=>6456532303914, "title"=>"uk5.5", "price"=>"1499.00", "sku"=>"", "position"=>1, "inventory_policy"=>"deny", "compare_at_price"=>nil, "fulfillment_service"=>"manual", "inventory_management"=>nil, "option1"=>"uk5.5", "option2"=>nil, "option3"=>nil, "created_at"=>"2017-11-20T23:10:34+05:30", "updated_at"=>"2017-11-20T23:10:34+05:30", "taxable"=>true, "barcode"=>"", "grams"=>0, "image_id"=>nil, "inventory_quantity"=>1, "weight"=>0.0, "weight_unit"=>"kg", "old_inventory_quantity"=>1, "requires_shipping"=>true}, @prefix_options={:product_id=>421001756714}, @persisted=true>, #<ShopifyAPI::Variant:0x007ff49279ee18 @attributes={"id"=>6456532336682, "title"=>"uk6", "price"=>"1499.00", "sku"=>"", "position"=>2, "inventory_policy"=>"deny", "compare_at_price"=>nil, "fulfillment_service"=>"manual", "inventory_management"=>nil, "option1"=>"uk6", "option2"=>nil, "option3"=>nil, "created_at"=>"2017-11-20T23:10:34+05:30", "updated_at"=>"2017-11-20T23:10:34+05:30", "taxable"=>true, "barcode"=>"", "grams"=>0, "image_id"=>nil, "inventory_quantity"=>0, "weight"=>0.0, "weight_unit"=>"kg", "old_inventory_quantity"=>0, "requires_shipping"=>true}, @prefix_options={:product_id=>421001756714}, @persisted=true>], "options"=>[#<ShopifyAPI::Option:0x007ff4933c71e0 @attributes={"id"=>671985893418, "product_id"=>421001756714, "name"=>"Size", "position"=>1, "values"=>["uk5.5", "uk6"]}, @prefix_options={}, @persisted=true>], "images"=>[#<ShopifyAPI::Image:0x007ff4933c5660 @attributes={"id"=>1504477610026, "position"=>1, "created_at"=>"2017-11-20T23:10:37+05:30", "updated_at"=>"2017-11-20T23:10:37+05:30", "width"=>800, "height"=>800, "src"=>"https://cdn.shopify.com/s/files/1/2559/7184/products/2a2912_1867482b24444ab690139e4af0a4c204_mv2.jpg?v=1511199637", "variant_ids"=>[]}, @prefix_options={:product_id=>421001756714}, @persisted=true>], "image"=>#<ShopifyAPI::Image:0x007ff4933b7a10 @attributes={"id"=>1504477610026, "position"=>1, "created_at"=>"2017-11-20T23:10:37+05:30", "updated_at"=>"2017-11-20T23:10:37+05:30", "width"=>800, "height"=>800, "src"=>"https://cdn.shopify.com/s/files/1/2559/7184/products/2a2912_1867482b24444ab690139e4af0a4c204_mv2.jpg?v=1511199637", "variant_ids"=>[]}, @prefix_options={:product_id=>421001756714}, @persisted=true>}, @prefix_options={}, @persisted=true>]
+[#<ShopifyAPI::Customer:0x007ff4927df490 @attributes={"id"=>231280377898, "email"=>"bagavathi1804@gmail.com", "accepts_marketing"=>false, "created_at"=>"2017-11-21T07:28:56+05:30", "updated_at"=>"2017-11-21T07:28:56+05:30", "first_name"=>"Bagavathi", "last_name"=>"t", "orders_count"=>0, "state"=>"enabled", "total_spent"=>"0.00", "last_order_id"=>nil, "note"=>nil, "verified_email"=>true, "multipass_identifier"=>nil, "tax_exempt"=>false, "phone"=>nil, "tags"=>"", "last_order_name"=>nil, "addresses"=>[]}, @prefix_options={}, @persisted=true>, #<ShopifyAPI::Customer:0x007ff4927dcf38 @attributes={"id"=>226408988714, "email"=>"bagavathisundaram@gmail.com", "accepts_marketing"=>false, "created_at"=>"2017-11-20T23:33:02+05:30", "updated_at"=>"2017-11-20T23:33:02+05:30", "first_name"=>"Bagavathi", "last_name"=>"t", "orders_count"=>0, "state"=>"disabled", "total_spent"=>"0.00", "last_order_id"=>nil, "note"=>nil, "verified_email"=>true, "multipass_identifier"=>nil, "tax_exempt"=>false, "phone"=>nil, "tags"=>"", "last_order_name"=>nil, "addresses"=>[#<ShopifyAPI::Address:0x007ff4971a1d80 @attributes={"id"=>237224132650, "customer_id"=>226408988714, "first_name"=>"Bagavathi", "last_name"=>"t", "company"=>nil, "address1"=>"18,balaji nagar", "address2"=>"Reddiyarpatti", "city"=>"TIRUNELVELI", "province"=>"Tamil Nadu", "country"=>"India", "zip"=>"627007", "phone"=>nil, "name"=>"Bagavathi t", "province_code"=>"TN", "country_code"=>"IN", "country_name"=>"India", "default"=>true}, @prefix_options={}, @persisted=true>], "default_address"=>#<ShopifyAPI::Customer::DefaultAddress:0x007ff497193438 @attributes={"id"=>237224132650, "customer_id"=>226408988714, "first_name"=>"Bagavathi", "last_name"=>"t", "company"=>nil, "address1"=>"18,balaji nagar", "address2"=>"Reddiyarpatti", "city"=>"TIRUNELVELI", "province"=>"Tamil Nadu", "country"=>"India", "zip"=>"627007", "phone"=>nil, "name"=>"Bagavathi t", "province_code"=>"TN", "country_code"=>"IN", "country_name"=>"India", "default"=>true}, @prefix_options={}, @persisted=true>}, @prefix_options={}, @persisted=true>]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  Rendered students/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 6967ms (Views: 83.0ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/" for ::1 at 2017-11-22 00:17:22 +0530
+Processing by StudentsController#index as HTML
+https://b55b604e50afa1abefd9168c142719e4:bc4c2f00b1049aeb0c63e37b77b9bb81@schoolsay.myshopify.com/admin__ShopifyAPI::Base
+nil
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (3.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  Rendered students/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 2244ms (Views: 92.7ms | ActiveRecord: 14.3ms)
+
+

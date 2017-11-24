@@ -1,0 +1,32 @@
+<%= form_with(model: school_product_commission, local: true) do |form| %>
+  <% if school_product_commission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(school_product_commission.errors.count, "error") %> prohibited this school_product_commission from being saved:</h2>
+
+      <ul>
+      <% school_product_commission.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :school_id %>
+    <%= form.text_field :school_id, id: :school_product_commission_school_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :product_id %>
+    <%= form.number_field :product_id, id: :school_product_commission_product_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :commission %>
+    <%= form.text_field :commission, id: :school_product_commission_commission %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
