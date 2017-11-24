@@ -5,7 +5,7 @@ class CreateStudents < ActiveRecord::Migration[5.1]
       t.string :rollno
       t.string :parent_primary_email
       t.string :parent_primary_phone
-      t.string :class
+      t.string :classname
       t.boolean :ordered
       t.string :payment_token
       t.integer :commision

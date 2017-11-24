@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
 
   # GET /students/new
   def new
-    @student = Student.new
+    @student = Student.new()
   end
 
   # GET /students/1/edit
@@ -69,6 +69,6 @@ class StudentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
-      params.require(:student).permit(:name, :rollno, :parent_primary_email, :parent_primary_phone, :class, :ordered, :payment_token, :school_id)
+      params.require(:student).permit(:name, :rollno, :parent_primary_email, :parent_primary_phone, :classname, :ordered, :payment_token, :school_id)
     end
 end
