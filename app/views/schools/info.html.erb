@@ -1,3 +1,6 @@
+Commision(via orders by student): <%= @commision_ordered %><br/><br/>
+Commision(via orders by anonymous users):<%= @commision_users %><br/><br/>
+Total Commision: <%= @commision_ordered + @commision_users %><br/><br/>
 <% if @ordered_student.present? %>
 <h2> Ordered Student </h2>
 <table>
@@ -22,7 +25,7 @@
   </tr>
 <% end %>
 <% end%>
-<hr>
+</table>
 <% if @unordered_student.present? %>
 <h2> remaining Student </h2>
 <table>
@@ -45,7 +48,6 @@
   </tr>
 <% end %>
 <% end %>
-<hr>
 <% if @anonymous_users.present? %>
 <h2> Anonymous Users </h2>
  <table>

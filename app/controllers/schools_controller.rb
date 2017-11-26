@@ -62,9 +62,11 @@ class SchoolsController < ApplicationController
   end
 
   def info
-    @ordered_student = Student.where(:school_id => params[:school_id],:ordered => true)
-    @unordered_student = Student.where(:school_id => params[:school_id],:ordered => false)
+    @ordered_student = Student.where(:school_id => params[:id],:ordered => true)
+    @unordered_student = Student.where(:school_id => params[:id],:ordered => false)
     @anonymous_users = AnonymousUser.where(:school_id => params[:school_id])
+    @commision_ordered = Student.where(:school_id => params[:id]).pluck(:commision).sum
+    @commision_users = AnonymousUser.where(:school_id => params[:id]).pluck(:commision).sum
   end
 
   private

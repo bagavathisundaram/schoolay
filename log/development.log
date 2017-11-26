@@ -655,3 +655,242 @@ Processing by SchoolsController#info as HTML
 Completed 200 OK in 81ms (Views: 73.1ms | ActiveRecord: 2.4ms)
 
 
+Started GET "/schools" for 127.0.0.1 at 2017-11-26 12:50:55 +0530
+  [1m[35m (12.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (3.4ms)[0m  [1m[34mSELECT `schools`.* FROM `schools`[0m
+  Rendered schools/index.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 572ms (Views: 525.9ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/students/" for 127.0.0.1 at 2017-11-26 12:51:04 +0530
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  [1m[36mSchool Load (3.0ms)[0m  [1m[34mSELECT  `schools`.* FROM `schools` WHERE `schools`.`id` = 1 LIMIT 1[0m
+  Rendered students/index.html.erb within layouts/application (62.4ms)
+Completed 200 OK in 112ms (Views: 84.0ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-11-26 12:51:10 +0530
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (63.0ms)
+  Rendered students/new.html.erb within layouts/application (67.4ms)
+Completed 200 OK in 101ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/" for 127.0.0.1 at 2017-11-26 12:53:34 +0530
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  Rendered students/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-11-26 12:53:39 +0530
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.5ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (10.2ms)
+  Rendered students/edit.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 53ms (Views: 44.6ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/students/1" for 127.0.0.1 at 2017-11-26 12:53:47 +0530
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QAsfByl8TaVvb5I5LQOxjl/0ElKadmxUIsBjaiZL5sOaKH7eH/24Ltb/Ft1rK4Mv0X6VuyR0bv6q+fEflFMU1A==", "student"=>{"name"=>"Bagavathi", "rollno"=>"12bcs043", "parent_primary_email"=>"bagavathisundaram@gmail.com", "parent_primary_phone"=>"07708938805", "classname"=>"hfn", "ordered"=>"1", "payment_token"=>"hf", "school_id"=>"1"}, "commit"=>"Update Student", "id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSchool Load (0.5ms)[0m  [1m[34mSELECT  `schools`.* FROM `schools` WHERE `schools`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (4.3ms)[0m  [1m[33mUPDATE `students` SET `ordered` = 1, `updated_at` = '2017-11-26 07:23:47' WHERE `students`.`id` = 1[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 26ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2017-11-26 12:53:47 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  Rendering students/show.html.erb within layouts/application
+  [1m[36mSchool Load (0.4ms)[0m  [1m[34mSELECT  `schools`.* FROM `schools` WHERE `schools`.`id` = 1 LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 61ms (Views: 29.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:54:01 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` IS NULL AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` IS NULL AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.3ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 47ms (Views: 28.4ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:54:40 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.4ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 110ms (Views: 85.9ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-11-26 12:55:32 +0530
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (7.9ms)
+  Rendered students/edit.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 50ms (Views: 45.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2017-11-26 12:55:43 +0530
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+  Rendered students/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 61ms (Views: 54.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:58:07 +0530
+  
+SyntaxError (/Users/bagavathi/project/app/controllers/schools_controller.rb:69: syntax error, unexpected tIVAR, expecting ')'
+    @commision_users = AnonymousUser.where(:schoo...
+                    ^
+/Users/bagavathi/project/app/controllers/schools_controller.rb:70: syntax error, unexpected keyword_end, expecting ')'
+/Users/bagavathi/project/app/controllers/schools_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/schools_controller.rb:69: syntax error, unexpected tIVAR, expecting ')'
+app/controllers/schools_controller.rb:70: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/schools_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:58:59 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `students`.`commision` FROM `students` WHERE `students`.`school_id` = 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `anonymous_users`.`commision` FROM `anonymous_users` WHERE `anonymous_users`.`school_id` = 1[0m
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.3ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 66ms (Views: 38.8ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 13:04:01 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `students`.`commision` FROM `students` WHERE `students`.`school_id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `anonymous_users`.`commision` FROM `anonymous_users` WHERE `anonymous_users`.`school_id` = 1[0m
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.5ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 40ms (Views: 32.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 13:05:16 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1 LIMIT 11[0m
+#<ActiveRecord::Relation [#<Student id: 1, name: "Bagavathi", rollno: "12bcs043", parent_primary_email: "bagavathisundaram@gmail.com", parent_primary_phone: "07708938805", classname: "hfn", ordered: true, payment_token: "hf", commision: 4.5, school_id: 1, created_at: "2017-11-24 15:33:57", updated_at: "2017-11-26 07:23:47">]>
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `students`.`commision` FROM `students` WHERE `students`.`school_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `anonymous_users`.`commision` FROM `anonymous_users` WHERE `anonymous_users`.`school_id` = 1[0m
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.5ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 76ms (Views: 32.6ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 13:08:40 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1 LIMIT 11[0m
+#<ActiveRecord::Relation [#<Student id: 1, name: "Bagavathi", rollno: "12bcs043", parent_primary_email: "bagavathisundaram@gmail.com", parent_primary_phone: "07708938805", classname: "hfn", ordered: true, payment_token: "hf", commision: 4.5, school_id: 1, created_at: "2017-11-24 15:33:57", updated_at: "2017-11-26 07:23:47">]>
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `students`.`commision` FROM `students` WHERE `students`.`school_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `anonymous_users`.`commision` FROM `anonymous_users` WHERE `anonymous_users`.`school_id` = 1[0m
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.3ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 36ms (Views: 27.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 13:09:21 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `students`.`commision` FROM `students` WHERE `students`.`school_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `anonymous_users`.`commision` FROM `anonymous_users` WHERE `anonymous_users`.`school_id` = 1[0m
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.4ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 75ms (Views: 48.3ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 13:10:45 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `students`.`commision` FROM `students` WHERE `students`.`school_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `anonymous_users`.`commision` FROM `anonymous_users` WHERE `anonymous_users`.`school_id` = 1[0m
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.4ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 45ms (Views: 36.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 13:11:10 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `students`.`commision` FROM `students` WHERE `students`.`school_id` = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `anonymous_users`.`commision` FROM `anonymous_users` WHERE `anonymous_users`.`school_id` = 1[0m
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.3ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 58ms (Views: 48.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 13:11:34 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `students`.`commision` FROM `students` WHERE `students`.`school_id` = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `anonymous_users`.`commision` FROM `anonymous_users` WHERE `anonymous_users`.`school_id` = 1[0m
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.3ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 38ms (Views: 32.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 13:23:33 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT `students`.`commision` FROM `students` WHERE `students`.`school_id` = 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `anonymous_users`.`commision` FROM `anonymous_users` WHERE `anonymous_users`.`school_id` = 1[0m
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` = 1 AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.6ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 182ms (Views: 163.6ms | ActiveRecord: 4.4ms)
+
+
