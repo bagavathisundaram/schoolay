@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @anonymous_user.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @anonymous_user.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @anonymous_user.email %>
+</p>
+
+<p>
+  <strong>School:</strong>
+  <%= @anonymous_user.school %>
+</p>
+
+<%= link_to 'Edit', edit_anonymous_user_path(@anonymous_user) %> |
+<%= link_to 'Back', anonymous_users_path %>

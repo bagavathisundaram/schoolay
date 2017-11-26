@@ -8,7 +8,7 @@ class CreateStudents < ActiveRecord::Migration[5.1]
       t.string :classname
       t.boolean :ordered
       t.string :payment_token
-      t.integer :commision
+      t.float :commision
       t.references :school, foreign_key: true
       t.timestamps
     end

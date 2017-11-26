@@ -539,3 +539,119 @@ Processing by StudentsController#index as HTML
 Completed 200 OK in 1341ms (Views: 32.6ms | ActiveRecord: 0.9ms)
 
 
+  [1m[35m (22.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT GET_LOCK(5372915627440493475, 0)[0m
+  [1m[35m (15.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAnonymousUsers (20171126062325)
+  [1m[35m (69.3ms)[0m  [1m[35mCREATE TABLE `anonymous_users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `phone` varchar(255), `email` varchar(255), `commision` float, `school_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_anonymous_users_on_school_id`  (`school_id`), CONSTRAINT `fk_rails_7ba647160b`
+FOREIGN KEY (`school_id`)
+  REFERENCES `schools` (`id`)
+) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20171126062325')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK(5372915627440493475)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:01:00 +0530
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+SyntaxError (/Users/bagavathi/project/app/controllers/schools_controller.rb:69: syntax error, unexpected =>, expecting '}'
+...      format.json { :ordered => @ordered_student, :unordered...
+...                               ^
+/Users/bagavathi/project/app/controllers/schools_controller.rb:69: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+...@ordered_student, :unordered => @unodered_student, :anonymou...
+...                               ^
+/Users/bagavathi/project/app/controllers/schools_controller.rb:69: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+...ed_student, :anonymous_users => @anonymous_users }
+...                               ^):
+  
+app/controllers/schools_controller.rb:69: syntax error, unexpected =>, expecting '}'
+app/controllers/schools_controller.rb:69: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/controllers/schools_controller.rb:69: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:01:50 +0530
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (4.2ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` IS NULL AND `students`.`ordered` = 1[0m
+  Rendered schools/info.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 2150ms (ActiveRecord: 16.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    32:       <th>Class</th>
+    33:     </tr>
+    34:   </thead>
+    35: <% @unordered_student.each do |student| %>
+    36:   <tr>
+    37:     <td><%= student.name %></td>
+    38:     <td><%= student.rollno %></td>
+  
+app/views/schools/info.html.erb:35:in `_app_views_schools_info_html_erb___1275677362524587291_70354615405940'
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:04:19 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (1.1ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` IS NULL AND `students`.`ordered` = 1[0m
+  [1m[36mAnonymousUser Load (0.9ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 2969ms (Views: 1029.0ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:06:39 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 12752ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveResource::SSLError (SSL_connect SYSCALL returned=5 errno=0 state=SSLv2/v3 read server hello A):
+  
+app/controllers/application_controller.rb:9:in `set_shopify'
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:07:02 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (1.4ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` IS NULL AND `students`.`ordered` = 1[0m
+  [1m[36mAnonymousUser Load (0.6ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 15140ms (Views: 145.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:10:30 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 42037ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:11:31 +0530
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  Rendering schools/info.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` IS NULL AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` IS NULL AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.6ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 884ms (Views: 806.5ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/schools/1/info" for 127.0.0.1 at 2017-11-26 12:12:28 +0530
+Processing by SchoolsController#info as HTML
+  Parameters: {"id"=>"1"}
+  Rendering schools/info.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` IS NULL AND `students`.`ordered` = 1[0m
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT `students`.* FROM `students` WHERE `students`.`school_id` IS NULL AND `students`.`ordered` = 0[0m
+  [1m[36mAnonymousUser Load (0.5ms)[0m  [1m[34mSELECT `anonymous_users`.* FROM `anonymous_users` WHERE `anonymous_users`.`school_id` IS NULL[0m
+  Rendered schools/info.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 81ms (Views: 73.1ms | ActiveRecord: 2.4ms)
+
+

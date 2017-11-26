@@ -1,0 +1,66 @@
+<% if @ordered_student.present? %>
+<h2> Ordered Student </h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Rollno</th>
+      <th>Parent primary email</th>
+      <th>Parent primary phone</th>
+      <th>Commision</th>
+      <th>Class</th>
+    </tr>
+  </thead>
+<% @ordered_student.each do |student| %>
+  <tr>
+    <td><%= student.name %></td>
+    <td><%= student.rollno %></td>
+    <td><%= student.parent_primary_email %></td>
+    <td><%= student.parent_primary_phone %></td>
+    <td><%= student.commision %></td>
+    <td><%= student.classname %></td>
+  </tr>
+<% end %>
+<% end%>
+<hr>
+<% if @unordered_student.present? %>
+<h2> remaining Student </h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Rollno</th>
+      <th>Parent primary email</th>
+      <th>Parent primary phone</th>
+      <th>Class</th>
+    </tr>
+  </thead>
+<% @unordered_student.each do |student| %>
+  <tr>
+    <td><%= student.name %></td>
+    <td><%= student.rollno %></td>
+    <td><%= student.parent_primary_email %></td>
+    <td><%= student.parent_primary_phone %></td>
+    <td><%= student.classname %></td>
+  </tr>
+<% end %>
+<% end %>
+<hr>
+<% if @anonymous_users.present? %>
+<h2> Anonymous Users </h2>
+ <table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Parent primary email</th>
+      <th>Parent primary phone</th>
+    </tr>
+  </thead>
+<% @anonymous_users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.phone %></td>
+  </tr>
+<% end %>
+<% end %>

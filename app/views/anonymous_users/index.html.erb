@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Anonymous Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>School</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @anonymous_users.each do |anonymous_user| %>
+      <tr>
+        <td><%= anonymous_user.name %></td>
+        <td><%= anonymous_user.phone %></td>
+        <td><%= anonymous_user.email %></td>
+        <td><%= anonymous_user.school %></td>
+        <td><%= link_to 'Show', anonymous_user %></td>
+        <td><%= link_to 'Edit', edit_anonymous_user_path(anonymous_user) %></td>
+        <td><%= link_to 'Destroy', anonymous_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Anonymous User', new_anonymous_user_path %>

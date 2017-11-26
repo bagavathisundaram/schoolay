@@ -12,8 +12,9 @@ module SchoolsHelper
 				st.commission = st.commission + commission
 				st.save!
 			else
-				user = AnonymousUser.create(:email => order.email,:phone => order.customer.default_address.phone )
+				user = AnonymousUser.create(:name => order.customer.first_name,:email => order.email,:phone => order.customer.default_address.phone )
 				user.school_id = calculate_users(user,order.line_items)
+				user.commision = calculate_commision(user.school_id,order.line_items)
 				user.save!
 			end
 		end
@@ -22,7 +23,7 @@ module SchoolsHelper
 	def calculate_commision(school_id, items)
 		commission = 0
 		items.each do |item|
-			commission = SchoolProductCommission.where(:product_id => item.id, :school_id => school_id ).first.commision
+			commission = commission + SchoolProductCommission.where(:product_id => item.id, :school_id => school_id ).first.commision
 		end
 		commission
 	end
@@ -35,5 +36,9 @@ module SchoolsHelper
 			end
 		end
 		return nil
+	end
+
+	def anonymous_users_to_student(user_id, student_id)
+
 	end
 end

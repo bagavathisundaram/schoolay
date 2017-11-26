@@ -61,6 +61,12 @@ class SchoolsController < ApplicationController
     end
   end
 
+  def info
+    @ordered_student = Student.where(:school_id => params[:school_id],:ordered => true)
+    @unordered_student = Student.where(:school_id => params[:school_id],:ordered => false)
+    @anonymous_users = AnonymousUser.where(:school_id => params[:school_id])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_school
