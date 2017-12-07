@@ -1,0 +1,507 @@
+D, [2017-11-30T10:02:10.508208 #7320] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-11-30T10:02:10.510458 #7320] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK(2002103346962335575, 0)[0m
+D, [2017-11-30T10:02:10.517532 #7320] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2017-11-30T10:02:10.520485 #7320] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-11-30T10:02:10.524673 #7320] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-11-30T10:02:10.525653 #7320] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-11-30T10:02:10.525919 #7320] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK(2002103346962335575)[0m
+D, [2017-11-30T12:29:15.841913 #12712] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-11-30T12:29:15.844075 #12712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK(2002103346962335575, 0)[0m
+D, [2017-11-30T12:29:15.851010 #12712] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2017-11-30T12:29:15.853857 #12712] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-11-30T12:29:15.857943 #12712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-11-30T12:29:15.858844 #12712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-11-30T12:29:15.859101 #12712] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK(2002103346962335575)[0m
+I, [2017-11-30T12:41:45.228889 #13123]  INFO -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe] Started HEAD "/" for 127.0.0.1 at 2017-11-30 12:41:45 +0000
+I, [2017-11-30T12:41:45.234088 #13123]  INFO -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe] Processing by StudentsController#index as HTML
+I, [2017-11-30T12:41:45.249020 #13123]  INFO -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe]   Rendering students/index.html.erb within layouts/application
+D, [2017-11-30T12:41:45.254088 #13123] DEBUG -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe]   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-11-30T12:41:45.255279 #13123] DEBUG -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe]   [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-11-30T12:41:45.257767 #13123]  INFO -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe]   Rendered students/index.html.erb within layouts/application (8.6ms)
+I, [2017-11-30T12:41:45.259683 #13123]  INFO -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe] Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.1ms)
+F, [2017-11-30T12:41:45.260461 #13123] FATAL -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe]   
+F, [2017-11-30T12:41:45.260516 #13123] FATAL -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2017-11-30T12:41:45.260681 #13123] FATAL -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe]     4:     <title>Schoolay</title>
+[a3bf7123-bbe8-4acd-a183-73d22bc49abe]     5:     <%= csrf_meta_tags %>
+[a3bf7123-bbe8-4acd-a183-73d22bc49abe]     6: 
+[a3bf7123-bbe8-4acd-a183-73d22bc49abe]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[a3bf7123-bbe8-4acd-a183-73d22bc49abe]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[a3bf7123-bbe8-4acd-a183-73d22bc49abe]     9:   </head>
+[a3bf7123-bbe8-4acd-a183-73d22bc49abe]    10: 
+F, [2017-11-30T12:41:45.260732 #13123] FATAL -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe]   
+F, [2017-11-30T12:41:45.260781 #13123] FATAL -- : [a3bf7123-bbe8-4acd-a183-73d22bc49abe] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3560860706449775453_47078425576140'
+I, [2017-11-30T12:42:08.993298 #13123]  INFO -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363] Started GET "/" for 106.51.240.93 at 2017-11-30 12:42:08 +0000
+I, [2017-11-30T12:42:08.994016 #13123]  INFO -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363] Processing by StudentsController#index as HTML
+I, [2017-11-30T12:42:08.994765 #13123]  INFO -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]   Rendering students/index.html.erb within layouts/application
+D, [2017-11-30T12:42:08.995567 #13123] DEBUG -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-11-30T12:42:08.995830 #13123]  INFO -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]   Rendered students/index.html.erb within layouts/application (1.0ms)
+I, [2017-11-30T12:42:08.996730 #13123]  INFO -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2017-11-30T12:42:08.997350 #13123] FATAL -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]   
+F, [2017-11-30T12:42:08.997394 #13123] FATAL -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2017-11-30T12:42:08.997514 #13123] FATAL -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]     4:     <title>Schoolay</title>
+[ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]     5:     <%= csrf_meta_tags %>
+[ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]     6: 
+[ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]     9:   </head>
+[ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]    10: 
+F, [2017-11-30T12:42:08.997554 #13123] FATAL -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363]   
+F, [2017-11-30T12:42:08.997583 #13123] FATAL -- : [ec9a5bcb-1ff7-4a3b-9320-f6ff57288363] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3560860706449775453_47078425576140'
+I, [2017-11-30T12:44:31.930315 #13123]  INFO -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f] Started GET "/" for 106.51.240.93 at 2017-11-30 12:44:31 +0000
+I, [2017-11-30T12:44:31.930929 #13123]  INFO -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f] Processing by StudentsController#index as HTML
+I, [2017-11-30T12:44:31.931613 #13123]  INFO -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f]   Rendering students/index.html.erb within layouts/application
+D, [2017-11-30T12:44:31.932430 #13123] DEBUG -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-11-30T12:44:31.932685 #13123]  INFO -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f]   Rendered students/index.html.erb within layouts/application (1.0ms)
+I, [2017-11-30T12:44:31.933567 #13123]  INFO -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2017-11-30T12:44:31.934203 #13123] FATAL -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f]   
+F, [2017-11-30T12:44:31.934248 #13123] FATAL -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2017-11-30T12:44:31.934366 #13123] FATAL -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f]     4:     <title>Schoolay</title>
+[a14e7329-4b7f-4414-a618-a9f5555d0e1f]     5:     <%= csrf_meta_tags %>
+[a14e7329-4b7f-4414-a618-a9f5555d0e1f]     6: 
+[a14e7329-4b7f-4414-a618-a9f5555d0e1f]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[a14e7329-4b7f-4414-a618-a9f5555d0e1f]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[a14e7329-4b7f-4414-a618-a9f5555d0e1f]     9:   </head>
+[a14e7329-4b7f-4414-a618-a9f5555d0e1f]    10: 
+F, [2017-11-30T12:44:31.934410 #13123] FATAL -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f]   
+F, [2017-11-30T12:44:31.934443 #13123] FATAL -- : [a14e7329-4b7f-4414-a618-a9f5555d0e1f] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3560860706449775453_47078425576140'
+I, [2017-11-30T15:11:49.672674 #13123]  INFO -- : [efb6ba93-e809-4827-bd82-6d31004a97fd] Started GET "/" for 49.203.214.181 at 2017-11-30 15:11:49 +0000
+I, [2017-11-30T15:11:49.673178 #13123]  INFO -- : [efb6ba93-e809-4827-bd82-6d31004a97fd] Processing by StudentsController#index as HTML
+I, [2017-11-30T15:11:49.673751 #13123]  INFO -- : [efb6ba93-e809-4827-bd82-6d31004a97fd]   Rendering students/index.html.erb within layouts/application
+D, [2017-11-30T15:11:49.674464 #13123] DEBUG -- : [efb6ba93-e809-4827-bd82-6d31004a97fd]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-11-30T15:11:49.674676 #13123]  INFO -- : [efb6ba93-e809-4827-bd82-6d31004a97fd]   Rendered students/index.html.erb within layouts/application (0.9ms)
+I, [2017-11-30T15:11:49.675450 #13123]  INFO -- : [efb6ba93-e809-4827-bd82-6d31004a97fd] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+F, [2017-11-30T15:11:49.676024 #13123] FATAL -- : [efb6ba93-e809-4827-bd82-6d31004a97fd]   
+F, [2017-11-30T15:11:49.676067 #13123] FATAL -- : [efb6ba93-e809-4827-bd82-6d31004a97fd] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2017-11-30T15:11:49.676161 #13123] FATAL -- : [efb6ba93-e809-4827-bd82-6d31004a97fd]     4:     <title>Schoolay</title>
+[efb6ba93-e809-4827-bd82-6d31004a97fd]     5:     <%= csrf_meta_tags %>
+[efb6ba93-e809-4827-bd82-6d31004a97fd]     6: 
+[efb6ba93-e809-4827-bd82-6d31004a97fd]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[efb6ba93-e809-4827-bd82-6d31004a97fd]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[efb6ba93-e809-4827-bd82-6d31004a97fd]     9:   </head>
+[efb6ba93-e809-4827-bd82-6d31004a97fd]    10: 
+F, [2017-11-30T15:11:49.676193 #13123] FATAL -- : [efb6ba93-e809-4827-bd82-6d31004a97fd]   
+F, [2017-11-30T15:11:49.676216 #13123] FATAL -- : [efb6ba93-e809-4827-bd82-6d31004a97fd] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3560860706449775453_47078425576140'
+I, [2017-11-30T15:12:35.870583 #13123]  INFO -- : [b301891c-4165-4953-ae73-47ca89786c54] Started GET "/" for 49.203.214.181 at 2017-11-30 15:12:35 +0000
+I, [2017-11-30T15:12:35.871089 #13123]  INFO -- : [b301891c-4165-4953-ae73-47ca89786c54] Processing by StudentsController#index as HTML
+I, [2017-11-30T15:12:35.871671 #13123]  INFO -- : [b301891c-4165-4953-ae73-47ca89786c54]   Rendering students/index.html.erb within layouts/application
+D, [2017-11-30T15:12:35.872419 #13123] DEBUG -- : [b301891c-4165-4953-ae73-47ca89786c54]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-11-30T15:12:35.872632 #13123]  INFO -- : [b301891c-4165-4953-ae73-47ca89786c54]   Rendered students/index.html.erb within layouts/application (0.9ms)
+I, [2017-11-30T15:12:35.873409 #13123]  INFO -- : [b301891c-4165-4953-ae73-47ca89786c54] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+F, [2017-11-30T15:12:35.873996 #13123] FATAL -- : [b301891c-4165-4953-ae73-47ca89786c54]   
+F, [2017-11-30T15:12:35.874028 #13123] FATAL -- : [b301891c-4165-4953-ae73-47ca89786c54] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2017-11-30T15:12:35.874140 #13123] FATAL -- : [b301891c-4165-4953-ae73-47ca89786c54]     4:     <title>Schoolay</title>
+[b301891c-4165-4953-ae73-47ca89786c54]     5:     <%= csrf_meta_tags %>
+[b301891c-4165-4953-ae73-47ca89786c54]     6: 
+[b301891c-4165-4953-ae73-47ca89786c54]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[b301891c-4165-4953-ae73-47ca89786c54]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[b301891c-4165-4953-ae73-47ca89786c54]     9:   </head>
+[b301891c-4165-4953-ae73-47ca89786c54]    10: 
+F, [2017-11-30T15:12:35.874166 #13123] FATAL -- : [b301891c-4165-4953-ae73-47ca89786c54]   
+F, [2017-11-30T15:12:35.874187 #13123] FATAL -- : [b301891c-4165-4953-ae73-47ca89786c54] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3560860706449775453_47078425576140'
+I, [2017-11-30T18:06:36.638017 #13123]  INFO -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4] Started GET "/" for 106.51.240.93 at 2017-11-30 18:06:36 +0000
+I, [2017-11-30T18:06:36.638524 #13123]  INFO -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4] Processing by StudentsController#index as HTML
+I, [2017-11-30T18:06:36.639097 #13123]  INFO -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4]   Rendering students/index.html.erb within layouts/application
+D, [2017-11-30T18:06:36.639820 #13123] DEBUG -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-11-30T18:06:36.640033 #13123]  INFO -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4]   Rendered students/index.html.erb within layouts/application (0.9ms)
+I, [2017-11-30T18:06:36.640834 #13123]  INFO -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+F, [2017-11-30T18:06:36.641414 #13123] FATAL -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4]   
+F, [2017-11-30T18:06:36.641446 #13123] FATAL -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2017-11-30T18:06:36.641546 #13123] FATAL -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4]     4:     <title>Schoolay</title>
+[bc521e57-8a3d-4b29-8454-7d55f3048bc4]     5:     <%= csrf_meta_tags %>
+[bc521e57-8a3d-4b29-8454-7d55f3048bc4]     6: 
+[bc521e57-8a3d-4b29-8454-7d55f3048bc4]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[bc521e57-8a3d-4b29-8454-7d55f3048bc4]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[bc521e57-8a3d-4b29-8454-7d55f3048bc4]     9:   </head>
+[bc521e57-8a3d-4b29-8454-7d55f3048bc4]    10: 
+F, [2017-11-30T18:06:36.641576 #13123] FATAL -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4]   
+F, [2017-11-30T18:06:36.641599 #13123] FATAL -- : [bc521e57-8a3d-4b29-8454-7d55f3048bc4] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3560860706449775453_47078425576140'
+I, [2017-12-07T08:10:08.210051 #5597]  INFO -- : [aab324ab-8eec-4455-b673-4565bfcdf995] Started GET "/" for 119.161.96.253 at 2017-12-07 08:10:08 +0000
+I, [2017-12-07T08:10:08.214314 #5597]  INFO -- : [aab324ab-8eec-4455-b673-4565bfcdf995] Processing by StudentsController#index as HTML
+I, [2017-12-07T08:10:08.224525 #5597]  INFO -- : [aab324ab-8eec-4455-b673-4565bfcdf995]   Rendering students/index.html.erb within layouts/application
+I, [2017-12-07T08:10:08.226161 #5597]  INFO -- : [aab324ab-8eec-4455-b673-4565bfcdf995]   Rendered students/index.html.erb within layouts/application (1.5ms)
+I, [2017-12-07T08:10:08.226314 #5597]  INFO -- : [aab324ab-8eec-4455-b673-4565bfcdf995] Completed 500 Internal Server Error in 12ms
+F, [2017-12-07T08:10:08.227063 #5597] FATAL -- : [aab324ab-8eec-4455-b673-4565bfcdf995]   
+F, [2017-12-07T08:10:08.227098 #5597] FATAL -- : [aab324ab-8eec-4455-b673-4565bfcdf995] ActionView::Template::Error (Can't connect to MySQL server on '127.0.0.1' (111)):
+F, [2017-12-07T08:10:08.227239 #5597] FATAL -- : [aab324ab-8eec-4455-b673-4565bfcdf995]     18:   </thead>
+[aab324ab-8eec-4455-b673-4565bfcdf995]     19: 
+[aab324ab-8eec-4455-b673-4565bfcdf995]     20:   <tbody>
+[aab324ab-8eec-4455-b673-4565bfcdf995]     21:     <% @students.each do |student| %>
+[aab324ab-8eec-4455-b673-4565bfcdf995]     22:       <tr>
+[aab324ab-8eec-4455-b673-4565bfcdf995]     23:         <td><%= student.name %></td>
+[aab324ab-8eec-4455-b673-4565bfcdf995]     24:         <td><%= student.rollno %></td>
+F, [2017-12-07T08:10:08.227274 #5597] FATAL -- : [aab324ab-8eec-4455-b673-4565bfcdf995]   
+F, [2017-12-07T08:10:08.227297 #5597] FATAL -- : [aab324ab-8eec-4455-b673-4565bfcdf995] app/views/students/index.html.erb:21:in `_app_views_students_index_html_erb__2558555069638387862_47190937831200'
+I, [2017-12-07T08:10:08.381742 #5597]  INFO -- : [e7349360-939a-4007-b095-0f7eb01fd30e] Started GET "/favicon.ico" for 119.161.96.253 at 2017-12-07 08:10:08 +0000
+F, [2017-12-07T08:10:08.382286 #5597] FATAL -- : [e7349360-939a-4007-b095-0f7eb01fd30e]   
+F, [2017-12-07T08:10:08.382327 #5597] FATAL -- : [e7349360-939a-4007-b095-0f7eb01fd30e] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2017-12-07T08:10:08.382352 #5597] FATAL -- : [e7349360-939a-4007-b095-0f7eb01fd30e]   
+F, [2017-12-07T08:10:08.382386 #5597] FATAL -- : [e7349360-939a-4007-b095-0f7eb01fd30e] actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+[e7349360-939a-4007-b095-0f7eb01fd30e] railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[e7349360-939a-4007-b095-0f7eb01fd30e] activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+[e7349360-939a-4007-b095-0f7eb01fd30e] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+[e7349360-939a-4007-b095-0f7eb01fd30e] railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] railties (5.1.4) lib/rails/engine.rb:522:in `call'
+[e7349360-939a-4007-b095-0f7eb01fd30e] rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+[e7349360-939a-4007-b095-0f7eb01fd30e] /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+[e7349360-939a-4007-b095-0f7eb01fd30e] /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+[e7349360-939a-4007-b095-0f7eb01fd30e] /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+I, [2017-12-07T08:10:33.053795 #5597]  INFO -- : [29dce23f-a553-478f-80f8-ad2e06991bf0] Started GET "/students" for 119.161.96.253 at 2017-12-07 08:10:33 +0000
+I, [2017-12-07T08:10:33.054480 #5597]  INFO -- : [29dce23f-a553-478f-80f8-ad2e06991bf0] Processing by StudentsController#index as HTML
+I, [2017-12-07T08:10:33.055160 #5597]  INFO -- : [29dce23f-a553-478f-80f8-ad2e06991bf0]   Rendering students/index.html.erb within layouts/application
+I, [2017-12-07T08:10:33.056016 #5597]  INFO -- : [29dce23f-a553-478f-80f8-ad2e06991bf0]   Rendered students/index.html.erb within layouts/application (0.8ms)
+I, [2017-12-07T08:10:33.056126 #5597]  INFO -- : [29dce23f-a553-478f-80f8-ad2e06991bf0] Completed 500 Internal Server Error in 2ms
+F, [2017-12-07T08:10:33.056873 #5597] FATAL -- : [29dce23f-a553-478f-80f8-ad2e06991bf0]   
+F, [2017-12-07T08:10:33.056909 #5597] FATAL -- : [29dce23f-a553-478f-80f8-ad2e06991bf0] ActionView::Template::Error (Can't connect to MySQL server on '127.0.0.1' (111)):
+F, [2017-12-07T08:10:33.057028 #5597] FATAL -- : [29dce23f-a553-478f-80f8-ad2e06991bf0]     18:   </thead>
+[29dce23f-a553-478f-80f8-ad2e06991bf0]     19: 
+[29dce23f-a553-478f-80f8-ad2e06991bf0]     20:   <tbody>
+[29dce23f-a553-478f-80f8-ad2e06991bf0]     21:     <% @students.each do |student| %>
+[29dce23f-a553-478f-80f8-ad2e06991bf0]     22:       <tr>
+[29dce23f-a553-478f-80f8-ad2e06991bf0]     23:         <td><%= student.name %></td>
+[29dce23f-a553-478f-80f8-ad2e06991bf0]     24:         <td><%= student.rollno %></td>
+F, [2017-12-07T08:10:33.057057 #5597] FATAL -- : [29dce23f-a553-478f-80f8-ad2e06991bf0]   
+F, [2017-12-07T08:10:33.057079 #5597] FATAL -- : [29dce23f-a553-478f-80f8-ad2e06991bf0] app/views/students/index.html.erb:21:in `_app_views_students_index_html_erb__2558555069638387862_47190937831200'
+I, [2017-12-07T08:11:42.479025 #5597]  INFO -- : [96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] Started GET "/public" for 119.161.96.253 at 2017-12-07 08:11:42 +0000
+F, [2017-12-07T08:11:42.479666 #5597] FATAL -- : [96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a]   
+F, [2017-12-07T08:11:42.479713 #5597] FATAL -- : [96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] ActionController::RoutingError (No route matches [GET] "/public"):
+F, [2017-12-07T08:11:42.479740 #5597] FATAL -- : [96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a]   
+F, [2017-12-07T08:11:42.479776 #5597] FATAL -- : [96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] railties (5.1.4) lib/rails/engine.rb:522:in `call'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+[96d4a35c-02d7-47f5-8bbb-43f1d5b0bf8a] /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+I, [2017-12-07T08:11:53.704699 #5597]  INFO -- : [46285bfe-89ce-473e-a0f3-d7d18bfbc462] Started GET "/" for 119.161.96.253 at 2017-12-07 08:11:53 +0000
+I, [2017-12-07T08:11:53.705334 #5597]  INFO -- : [46285bfe-89ce-473e-a0f3-d7d18bfbc462] Processing by StudentsController#index as HTML
+I, [2017-12-07T08:11:53.705943 #5597]  INFO -- : [46285bfe-89ce-473e-a0f3-d7d18bfbc462]   Rendering students/index.html.erb within layouts/application
+I, [2017-12-07T08:11:53.706788 #5597]  INFO -- : [46285bfe-89ce-473e-a0f3-d7d18bfbc462]   Rendered students/index.html.erb within layouts/application (0.8ms)
+I, [2017-12-07T08:11:53.706895 #5597]  INFO -- : [46285bfe-89ce-473e-a0f3-d7d18bfbc462] Completed 500 Internal Server Error in 1ms
+F, [2017-12-07T08:11:53.707591 #5597] FATAL -- : [46285bfe-89ce-473e-a0f3-d7d18bfbc462]   
+F, [2017-12-07T08:11:53.707626 #5597] FATAL -- : [46285bfe-89ce-473e-a0f3-d7d18bfbc462] ActionView::Template::Error (Can't connect to MySQL server on '127.0.0.1' (111)):
+F, [2017-12-07T08:11:53.707747 #5597] FATAL -- : [46285bfe-89ce-473e-a0f3-d7d18bfbc462]     18:   </thead>
+[46285bfe-89ce-473e-a0f3-d7d18bfbc462]     19: 
+[46285bfe-89ce-473e-a0f3-d7d18bfbc462]     20:   <tbody>
+[46285bfe-89ce-473e-a0f3-d7d18bfbc462]     21:     <% @students.each do |student| %>
+[46285bfe-89ce-473e-a0f3-d7d18bfbc462]     22:       <tr>
+[46285bfe-89ce-473e-a0f3-d7d18bfbc462]     23:         <td><%= student.name %></td>
+[46285bfe-89ce-473e-a0f3-d7d18bfbc462]     24:         <td><%= student.rollno %></td>
+F, [2017-12-07T08:11:53.707777 #5597] FATAL -- : [46285bfe-89ce-473e-a0f3-d7d18bfbc462]   
+F, [2017-12-07T08:11:53.707800 #5597] FATAL -- : [46285bfe-89ce-473e-a0f3-d7d18bfbc462] app/views/students/index.html.erb:21:in `_app_views_students_index_html_erb__2558555069638387862_47190937831200'
+I, [2017-12-07T08:12:37.540556 #5597]  INFO -- : [0a67baaf-aa4b-433c-95a3-e6d4b36dd359] Started GET "/%20open%20logs" for 119.161.96.253 at 2017-12-07 08:12:37 +0000
+F, [2017-12-07T08:12:37.541092 #5597] FATAL -- : [0a67baaf-aa4b-433c-95a3-e6d4b36dd359]   
+F, [2017-12-07T08:12:37.541132 #5597] FATAL -- : [0a67baaf-aa4b-433c-95a3-e6d4b36dd359] ActionController::RoutingError (No route matches [GET] "/%20open%20logs"):
+F, [2017-12-07T08:12:37.541161 #5597] FATAL -- : [0a67baaf-aa4b-433c-95a3-e6d4b36dd359]   
+F, [2017-12-07T08:12:37.541186 #5597] FATAL -- : [0a67baaf-aa4b-433c-95a3-e6d4b36dd359] actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] railties (5.1.4) lib/rails/engine.rb:522:in `call'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+[0a67baaf-aa4b-433c-95a3-e6d4b36dd359] /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+I, [2017-12-07T08:23:27.099455 #7786]  INFO -- : [13565d05-7f1b-4eac-ae50-91e3ea06df0c] Started GET "/" for 119.161.96.253 at 2017-12-07 08:23:27 +0000
+I, [2017-12-07T08:23:27.104073 #7786]  INFO -- : [13565d05-7f1b-4eac-ae50-91e3ea06df0c] Processing by StudentsController#index as HTML
+I, [2017-12-07T08:23:27.112427 #7786]  INFO -- : [13565d05-7f1b-4eac-ae50-91e3ea06df0c]   Rendering students/index.html.erb within layouts/application
+I, [2017-12-07T08:23:27.114752 #7786]  INFO -- : [13565d05-7f1b-4eac-ae50-91e3ea06df0c]   Rendered students/index.html.erb within layouts/application (2.2ms)
+I, [2017-12-07T08:23:27.114931 #7786]  INFO -- : [13565d05-7f1b-4eac-ae50-91e3ea06df0c] Completed 500 Internal Server Error in 11ms
+F, [2017-12-07T08:23:27.115825 #7786] FATAL -- : [13565d05-7f1b-4eac-ae50-91e3ea06df0c]   
+F, [2017-12-07T08:23:27.115864 #7786] FATAL -- : [13565d05-7f1b-4eac-ae50-91e3ea06df0c] ActionView::Template::Error (Can't connect to MySQL server on '127.0.0.1' (111)):
+F, [2017-12-07T08:23:27.115996 #7786] FATAL -- : [13565d05-7f1b-4eac-ae50-91e3ea06df0c]     18:   </thead>
+[13565d05-7f1b-4eac-ae50-91e3ea06df0c]     19: 
+[13565d05-7f1b-4eac-ae50-91e3ea06df0c]     20:   <tbody>
+[13565d05-7f1b-4eac-ae50-91e3ea06df0c]     21:     <% @students.each do |student| %>
+[13565d05-7f1b-4eac-ae50-91e3ea06df0c]     22:       <tr>
+[13565d05-7f1b-4eac-ae50-91e3ea06df0c]     23:         <td><%= student.name %></td>
+[13565d05-7f1b-4eac-ae50-91e3ea06df0c]     24:         <td><%= student.rollno %></td>
+F, [2017-12-07T08:23:27.116024 #7786] FATAL -- : [13565d05-7f1b-4eac-ae50-91e3ea06df0c]   
+F, [2017-12-07T08:23:27.116050 #7786] FATAL -- : [13565d05-7f1b-4eac-ae50-91e3ea06df0c] app/views/students/index.html.erb:21:in `_app_views_students_index_html_erb___255545517549586824_47351135990420'
+I, [2017-12-07T08:23:29.543247 #7786]  INFO -- : [09f0569f-d8a6-44dd-ac92-47a50446bede] Started GET "/" for 119.161.96.253 at 2017-12-07 08:23:29 +0000
+I, [2017-12-07T08:23:29.544169 #7786]  INFO -- : [09f0569f-d8a6-44dd-ac92-47a50446bede] Processing by StudentsController#index as HTML
+I, [2017-12-07T08:23:29.544890 #7786]  INFO -- : [09f0569f-d8a6-44dd-ac92-47a50446bede]   Rendering students/index.html.erb within layouts/application
+I, [2017-12-07T08:23:29.545944 #7786]  INFO -- : [09f0569f-d8a6-44dd-ac92-47a50446bede]   Rendered students/index.html.erb within layouts/application (1.0ms)
+I, [2017-12-07T08:23:29.546066 #7786]  INFO -- : [09f0569f-d8a6-44dd-ac92-47a50446bede] Completed 500 Internal Server Error in 2ms
+F, [2017-12-07T08:23:29.546868 #7786] FATAL -- : [09f0569f-d8a6-44dd-ac92-47a50446bede]   
+F, [2017-12-07T08:23:29.546910 #7786] FATAL -- : [09f0569f-d8a6-44dd-ac92-47a50446bede] ActionView::Template::Error (Can't connect to MySQL server on '127.0.0.1' (111)):
+F, [2017-12-07T08:23:29.547025 #7786] FATAL -- : [09f0569f-d8a6-44dd-ac92-47a50446bede]     18:   </thead>
+[09f0569f-d8a6-44dd-ac92-47a50446bede]     19: 
+[09f0569f-d8a6-44dd-ac92-47a50446bede]     20:   <tbody>
+[09f0569f-d8a6-44dd-ac92-47a50446bede]     21:     <% @students.each do |student| %>
+[09f0569f-d8a6-44dd-ac92-47a50446bede]     22:       <tr>
+[09f0569f-d8a6-44dd-ac92-47a50446bede]     23:         <td><%= student.name %></td>
+[09f0569f-d8a6-44dd-ac92-47a50446bede]     24:         <td><%= student.rollno %></td>
+F, [2017-12-07T08:23:29.547051 #7786] FATAL -- : [09f0569f-d8a6-44dd-ac92-47a50446bede]   
+F, [2017-12-07T08:23:29.547078 #7786] FATAL -- : [09f0569f-d8a6-44dd-ac92-47a50446bede] app/views/students/index.html.erb:21:in `_app_views_students_index_html_erb___255545517549586824_47351135990420'
+I, [2017-12-07T08:23:36.855905 #7786]  INFO -- : [b396d136-23cb-46a4-899c-1eb69a1d21ce] Started GET "/students" for 119.161.96.253 at 2017-12-07 08:23:36 +0000
+I, [2017-12-07T08:23:36.856691 #7786]  INFO -- : [b396d136-23cb-46a4-899c-1eb69a1d21ce] Processing by StudentsController#index as HTML
+I, [2017-12-07T08:23:36.857588 #7786]  INFO -- : [b396d136-23cb-46a4-899c-1eb69a1d21ce]   Rendering students/index.html.erb within layouts/application
+I, [2017-12-07T08:23:36.858666 #7786]  INFO -- : [b396d136-23cb-46a4-899c-1eb69a1d21ce]   Rendered students/index.html.erb within layouts/application (0.8ms)
+I, [2017-12-07T08:23:36.858816 #7786]  INFO -- : [b396d136-23cb-46a4-899c-1eb69a1d21ce] Completed 500 Internal Server Error in 2ms
+F, [2017-12-07T08:23:36.859489 #7786] FATAL -- : [b396d136-23cb-46a4-899c-1eb69a1d21ce]   
+F, [2017-12-07T08:23:36.859705 #7786] FATAL -- : [b396d136-23cb-46a4-899c-1eb69a1d21ce] ActionView::Template::Error (Can't connect to MySQL server on '127.0.0.1' (111)):
+F, [2017-12-07T08:23:36.859826 #7786] FATAL -- : [b396d136-23cb-46a4-899c-1eb69a1d21ce]     18:   </thead>
+[b396d136-23cb-46a4-899c-1eb69a1d21ce]     19: 
+[b396d136-23cb-46a4-899c-1eb69a1d21ce]     20:   <tbody>
+[b396d136-23cb-46a4-899c-1eb69a1d21ce]     21:     <% @students.each do |student| %>
+[b396d136-23cb-46a4-899c-1eb69a1d21ce]     22:       <tr>
+[b396d136-23cb-46a4-899c-1eb69a1d21ce]     23:         <td><%= student.name %></td>
+[b396d136-23cb-46a4-899c-1eb69a1d21ce]     24:         <td><%= student.rollno %></td>
+F, [2017-12-07T08:23:36.859851 #7786] FATAL -- : [b396d136-23cb-46a4-899c-1eb69a1d21ce]   
+F, [2017-12-07T08:23:36.859876 #7786] FATAL -- : [b396d136-23cb-46a4-899c-1eb69a1d21ce] app/views/students/index.html.erb:21:in `_app_views_students_index_html_erb___255545517549586824_47351135990420'
+I, [2017-12-07T08:23:40.110444 #7786]  INFO -- : [e83eff13-242a-436e-a0e1-1860c2c57478] Started GET "/students" for 119.161.96.253 at 2017-12-07 08:23:40 +0000
+I, [2017-12-07T08:23:40.111252 #7786]  INFO -- : [e83eff13-242a-436e-a0e1-1860c2c57478] Processing by StudentsController#index as HTML
+I, [2017-12-07T08:23:40.111881 #7786]  INFO -- : [e83eff13-242a-436e-a0e1-1860c2c57478]   Rendering students/index.html.erb within layouts/application
+I, [2017-12-07T08:23:40.112945 #7786]  INFO -- : [e83eff13-242a-436e-a0e1-1860c2c57478]   Rendered students/index.html.erb within layouts/application (1.0ms)
+I, [2017-12-07T08:23:40.113065 #7786]  INFO -- : [e83eff13-242a-436e-a0e1-1860c2c57478] Completed 500 Internal Server Error in 2ms
+F, [2017-12-07T08:23:40.113895 #7786] FATAL -- : [e83eff13-242a-436e-a0e1-1860c2c57478]   
+F, [2017-12-07T08:23:40.113929 #7786] FATAL -- : [e83eff13-242a-436e-a0e1-1860c2c57478] ActionView::Template::Error (Can't connect to MySQL server on '127.0.0.1' (111)):
+F, [2017-12-07T08:23:40.114037 #7786] FATAL -- : [e83eff13-242a-436e-a0e1-1860c2c57478]     18:   </thead>
+[e83eff13-242a-436e-a0e1-1860c2c57478]     19: 
+[e83eff13-242a-436e-a0e1-1860c2c57478]     20:   <tbody>
+[e83eff13-242a-436e-a0e1-1860c2c57478]     21:     <% @students.each do |student| %>
+[e83eff13-242a-436e-a0e1-1860c2c57478]     22:       <tr>
+[e83eff13-242a-436e-a0e1-1860c2c57478]     23:         <td><%= student.name %></td>
+[e83eff13-242a-436e-a0e1-1860c2c57478]     24:         <td><%= student.rollno %></td>
+F, [2017-12-07T08:23:40.114067 #7786] FATAL -- : [e83eff13-242a-436e-a0e1-1860c2c57478]   
+F, [2017-12-07T08:23:40.114088 #7786] FATAL -- : [e83eff13-242a-436e-a0e1-1860c2c57478] app/views/students/index.html.erb:21:in `_app_views_students_index_html_erb___255545517549586824_47351135990420'
+I, [2017-12-07T08:23:41.253763 #7786]  INFO -- : [b32e827d-dc84-4276-9ab5-6852e5d71a1c] Started GET "/students" for 119.161.96.253 at 2017-12-07 08:23:41 +0000
+I, [2017-12-07T08:23:41.254385 #7786]  INFO -- : [b32e827d-dc84-4276-9ab5-6852e5d71a1c] Processing by StudentsController#index as HTML
+I, [2017-12-07T08:23:41.255276 #7786]  INFO -- : [b32e827d-dc84-4276-9ab5-6852e5d71a1c]   Rendering students/index.html.erb within layouts/application
+I, [2017-12-07T08:23:41.256183 #7786]  INFO -- : [b32e827d-dc84-4276-9ab5-6852e5d71a1c]   Rendered students/index.html.erb within layouts/application (0.8ms)
+I, [2017-12-07T08:23:41.256308 #7786]  INFO -- : [b32e827d-dc84-4276-9ab5-6852e5d71a1c] Completed 500 Internal Server Error in 2ms
+F, [2017-12-07T08:23:41.257215 #7786] FATAL -- : [b32e827d-dc84-4276-9ab5-6852e5d71a1c]   
+F, [2017-12-07T08:23:41.257264 #7786] FATAL -- : [b32e827d-dc84-4276-9ab5-6852e5d71a1c] ActionView::Template::Error (Can't connect to MySQL server on '127.0.0.1' (111)):
+F, [2017-12-07T08:23:41.257378 #7786] FATAL -- : [b32e827d-dc84-4276-9ab5-6852e5d71a1c]     18:   </thead>
+[b32e827d-dc84-4276-9ab5-6852e5d71a1c]     19: 
+[b32e827d-dc84-4276-9ab5-6852e5d71a1c]     20:   <tbody>
+[b32e827d-dc84-4276-9ab5-6852e5d71a1c]     21:     <% @students.each do |student| %>
+[b32e827d-dc84-4276-9ab5-6852e5d71a1c]     22:       <tr>
+[b32e827d-dc84-4276-9ab5-6852e5d71a1c]     23:         <td><%= student.name %></td>
+[b32e827d-dc84-4276-9ab5-6852e5d71a1c]     24:         <td><%= student.rollno %></td>
+F, [2017-12-07T08:23:41.257409 #7786] FATAL -- : [b32e827d-dc84-4276-9ab5-6852e5d71a1c]   
+F, [2017-12-07T08:23:41.257653 #7786] FATAL -- : [b32e827d-dc84-4276-9ab5-6852e5d71a1c] app/views/students/index.html.erb:21:in `_app_views_students_index_html_erb___255545517549586824_47351135990420'
+D, [2017-12-07T10:10:30.372347 #28303] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-12-07T10:10:30.374374 #28303] DEBUG -- :   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  `students`.* FROM `students` LIMIT 11[0m
+I, [2017-12-07T10:10:49.605941 #28309]  INFO -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2] Started GET "/" for 119.161.96.253 at 2017-12-07 10:10:49 +0000
+I, [2017-12-07T10:10:49.610586 #28309]  INFO -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:10:49.618965 #28309]  INFO -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:10:49.624216 #28309] DEBUG -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2]   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-12-07T10:10:49.625028 #28309] DEBUG -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:10:49.627454 #28309]  INFO -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2]   Rendered students/index.html.erb within layouts/application (8.3ms)
+I, [2017-12-07T10:10:49.628995 #28309]  INFO -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2] Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms)
+F, [2017-12-07T10:10:49.629779 #28309] FATAL -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2]   
+F, [2017-12-07T10:10:49.629818 #28309] FATAL -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2017-12-07T10:10:49.630139 #28309] FATAL -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2]     4:     <title>Schoolay</title>
+[d00e8ae8-b358-42fa-90d7-cef225f219a2]     5:     <%= csrf_meta_tags %>
+[d00e8ae8-b358-42fa-90d7-cef225f219a2]     6: 
+[d00e8ae8-b358-42fa-90d7-cef225f219a2]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[d00e8ae8-b358-42fa-90d7-cef225f219a2]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[d00e8ae8-b358-42fa-90d7-cef225f219a2]     9:   </head>
+[d00e8ae8-b358-42fa-90d7-cef225f219a2]    10: 
+F, [2017-12-07T10:10:49.630175 #28309] FATAL -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2]   
+F, [2017-12-07T10:10:49.630201 #28309] FATAL -- : [d00e8ae8-b358-42fa-90d7-cef225f219a2] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4032642783319495004_47348330830980'
+I, [2017-12-07T10:18:12.126170 #28359]  INFO -- : [dd68e320-3ca4-4395-b71e-85be66434a87] Started GET "/" for 119.161.96.253 at 2017-12-07 10:18:12 +0000
+I, [2017-12-07T10:18:12.130001 #28359]  INFO -- : [dd68e320-3ca4-4395-b71e-85be66434a87] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:18:12.137831 #28359]  INFO -- : [dd68e320-3ca4-4395-b71e-85be66434a87]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:18:12.141918 #28359] DEBUG -- : [dd68e320-3ca4-4395-b71e-85be66434a87]   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-12-07T10:18:12.142704 #28359] DEBUG -- : [dd68e320-3ca4-4395-b71e-85be66434a87]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:18:12.144546 #28359]  INFO -- : [dd68e320-3ca4-4395-b71e-85be66434a87]   Rendered students/index.html.erb within layouts/application (6.5ms)
+I, [2017-12-07T10:18:12.145890 #28359]  INFO -- : [dd68e320-3ca4-4395-b71e-85be66434a87] Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.9ms)
+F, [2017-12-07T10:18:12.146500 #28359] FATAL -- : [dd68e320-3ca4-4395-b71e-85be66434a87]   
+F, [2017-12-07T10:18:12.146536 #28359] FATAL -- : [dd68e320-3ca4-4395-b71e-85be66434a87] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2017-12-07T10:18:12.146653 #28359] FATAL -- : [dd68e320-3ca4-4395-b71e-85be66434a87]     4:     <title>Schoolay</title>
+[dd68e320-3ca4-4395-b71e-85be66434a87]     5:     <%= csrf_meta_tags %>
+[dd68e320-3ca4-4395-b71e-85be66434a87]     6: 
+[dd68e320-3ca4-4395-b71e-85be66434a87]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[dd68e320-3ca4-4395-b71e-85be66434a87]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[dd68e320-3ca4-4395-b71e-85be66434a87]     9:   </head>
+[dd68e320-3ca4-4395-b71e-85be66434a87]    10: 
+F, [2017-12-07T10:18:12.146685 #28359] FATAL -- : [dd68e320-3ca4-4395-b71e-85be66434a87]   
+F, [2017-12-07T10:18:12.146707 #28359] FATAL -- : [dd68e320-3ca4-4395-b71e-85be66434a87] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3793528369926449689_47241172877560'
+I, [2017-12-07T10:18:42.382836 #28365]  INFO -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f] Started GET "/" for 119.161.96.253 at 2017-12-07 10:18:42 +0000
+I, [2017-12-07T10:18:42.386775 #28365]  INFO -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:18:42.394715 #28365]  INFO -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:18:42.399026 #28365] DEBUG -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-12-07T10:18:42.399849 #28365] DEBUG -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:18:42.401814 #28365]  INFO -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]   Rendered students/index.html.erb within layouts/application (7.0ms)
+I, [2017-12-07T10:18:42.403240 #28365]  INFO -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f] Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.0ms)
+F, [2017-12-07T10:18:42.403889 #28365] FATAL -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]   
+F, [2017-12-07T10:18:42.403940 #28365] FATAL -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2017-12-07T10:18:42.404054 #28365] FATAL -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]     4:     <title>Schoolay</title>
+[2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]     5:     <%= csrf_meta_tags %>
+[2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]     6: 
+[2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]     9:   </head>
+[2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]    10: 
+F, [2017-12-07T10:18:42.404094 #28365] FATAL -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f]   
+F, [2017-12-07T10:18:42.404120 #28365] FATAL -- : [2e475b94-23b4-4af6-ad6b-998ab6ce7b9f] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2830589586078566338_46931812854660'
+I, [2017-12-07T10:21:00.765112 #28384]  INFO -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a] Started GET "/" for 119.161.96.253 at 2017-12-07 10:21:00 +0000
+I, [2017-12-07T10:21:00.769070 #28384]  INFO -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:21:00.777176 #28384]  INFO -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:21:00.781479 #28384] DEBUG -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a]   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-12-07T10:21:00.782313 #28384] DEBUG -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:21:00.784286 #28384]  INFO -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a]   Rendered students/index.html.erb within layouts/application (7.0ms)
+I, [2017-12-07T10:21:00.785825 #28384]  INFO -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a] Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.0ms)
+F, [2017-12-07T10:21:00.786479 #28384] FATAL -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a]   
+F, [2017-12-07T10:21:00.786522 #28384] FATAL -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2017-12-07T10:21:00.786650 #28384] FATAL -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a]     4:     <title>Schoolay</title>
+[f44f7c8e-e255-4c6c-b5d0-69c35da4490a]     5:     <%= csrf_meta_tags %>
+[f44f7c8e-e255-4c6c-b5d0-69c35da4490a]     6: 
+[f44f7c8e-e255-4c6c-b5d0-69c35da4490a]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[f44f7c8e-e255-4c6c-b5d0-69c35da4490a]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[f44f7c8e-e255-4c6c-b5d0-69c35da4490a]     9:   </head>
+[f44f7c8e-e255-4c6c-b5d0-69c35da4490a]    10: 
+F, [2017-12-07T10:21:00.786685 #28384] FATAL -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a]   
+F, [2017-12-07T10:21:00.786706 #28384] FATAL -- : [f44f7c8e-e255-4c6c-b5d0-69c35da4490a] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2822763759775009869_47350030541000'
+I, [2017-12-07T10:23:15.772679 #28403]  INFO -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5] Started GET "/" for 119.161.96.253 at 2017-12-07 10:23:15 +0000
+I, [2017-12-07T10:23:15.776403 #28403]  INFO -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:23:15.784387 #28403]  INFO -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:23:15.788455 #28403] DEBUG -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5]   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-12-07T10:23:15.789232 #28403] DEBUG -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:23:15.791081 #28403]  INFO -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5]   Rendered students/index.html.erb within layouts/application (6.6ms)
+I, [2017-12-07T10:23:15.791756 #28403]  INFO -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5] Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.0ms)
+F, [2017-12-07T10:23:15.792565 #28403] FATAL -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5]   
+F, [2017-12-07T10:23:15.792612 #28403] FATAL -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5] SyntaxError (/var/www/schoolay/app/views/layouts/application.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+...script_include_tag 'application', 'data-turbolinks-track': '...
+...                               ^
+/var/www/schoolay/app/views/layouts/application.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nclude_tag 'application', 'data-turbolinks-track': 'reload' ...
+...                               ^
+/var/www/schoolay/app/views/layouts/application.html.erb:8: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ation', 'data-turbolinks-track': 'reload' );@output_buffer.s...
+...                               ^
+/var/www/schoolay/app/views/layouts/application.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+...data-turbolinks-track': 'reload' );@output_buffer.safe_appen...
+...                               ^
+/var/www/schoolay/app/views/layouts/application.html.erb:9: syntax error, unexpected '<', expecting ')'
+  </head>
+   ^
+/var/www/schoolay/app/views/layouts/application.html.erb:13: unknown regexp options - bdy
+/var/www/schoolay/app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+</html>
+ ^
+/var/www/schoolay/app/views/layouts/application.html.erb:14: unterminated regexp meets end of file):
+F, [2017-12-07T10:23:15.792640 #28403] FATAL -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5]   
+F, [2017-12-07T10:23:15.792666 #28403] FATAL -- : [8a6afebc-9c01-47d2-925d-0ee41e0a58a5] app/views/layouts/application.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+[8a6afebc-9c01-47d2-925d-0ee41e0a58a5] app/views/layouts/application.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+[8a6afebc-9c01-47d2-925d-0ee41e0a58a5] app/views/layouts/application.html.erb:8: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+[8a6afebc-9c01-47d2-925d-0ee41e0a58a5] app/views/layouts/application.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+[8a6afebc-9c01-47d2-925d-0ee41e0a58a5] app/views/layouts/application.html.erb:9: syntax error, unexpected '<', expecting ')'
+[8a6afebc-9c01-47d2-925d-0ee41e0a58a5] app/views/layouts/application.html.erb:13: unknown regexp options - bdy
+[8a6afebc-9c01-47d2-925d-0ee41e0a58a5] app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+[8a6afebc-9c01-47d2-925d-0ee41e0a58a5] app/views/layouts/application.html.erb:14: unterminated regexp meets end of file
+I, [2017-12-07T10:24:01.871164 #28413]  INFO -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2] Started GET "/" for 119.161.96.253 at 2017-12-07 10:24:01 +0000
+I, [2017-12-07T10:24:01.875896 #28413]  INFO -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:24:01.884457 #28413]  INFO -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:24:01.889505 #28413] DEBUG -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2]   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-12-07T10:24:01.890546 #28413] DEBUG -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:24:01.892857 #28413]  INFO -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2]   Rendered students/index.html.erb within layouts/application (8.2ms)
+I, [2017-12-07T10:24:01.894429 #28413]  INFO -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2] Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms)
+F, [2017-12-07T10:24:01.895203 #28413] FATAL -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2]   
+F, [2017-12-07T10:24:01.895252 #28413] FATAL -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2] ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+F, [2017-12-07T10:24:01.895367 #28413] FATAL -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2]     3:   <head>
+[c41be6af-e20e-46e1-9a31-99d13aa1a3d2]     4:     <title>Schoolay</title>
+[c41be6af-e20e-46e1-9a31-99d13aa1a3d2]     5:     <%= csrf_meta_tags %>
+[c41be6af-e20e-46e1-9a31-99d13aa1a3d2]     6:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[c41be6af-e20e-46e1-9a31-99d13aa1a3d2]     7:   </head>
+[c41be6af-e20e-46e1-9a31-99d13aa1a3d2]     8: 
+[c41be6af-e20e-46e1-9a31-99d13aa1a3d2]     9:   <body>
+F, [2017-12-07T10:24:01.895404 #28413] FATAL -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2]   
+F, [2017-12-07T10:24:01.895620 #28413] FATAL -- : [c41be6af-e20e-46e1-9a31-99d13aa1a3d2] app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4493939869160908914_46913325683440'
+I, [2017-12-07T10:24:58.696644 #28423]  INFO -- : [4c7ebdb7-7c96-4f67-9e5e-dac924b11144] Started GET "/" for 119.161.96.253 at 2017-12-07 10:24:58 +0000
+I, [2017-12-07T10:24:58.700726 #28423]  INFO -- : [4c7ebdb7-7c96-4f67-9e5e-dac924b11144] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:24:58.708603 #28423]  INFO -- : [4c7ebdb7-7c96-4f67-9e5e-dac924b11144]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:24:58.712695 #28423] DEBUG -- : [4c7ebdb7-7c96-4f67-9e5e-dac924b11144]   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-12-07T10:24:58.713506 #28423] DEBUG -- : [4c7ebdb7-7c96-4f67-9e5e-dac924b11144]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:24:58.715379 #28423]  INFO -- : [4c7ebdb7-7c96-4f67-9e5e-dac924b11144]   Rendered students/index.html.erb within layouts/application (6.7ms)
+I, [2017-12-07T10:24:58.716120 #28423]  INFO -- : [4c7ebdb7-7c96-4f67-9e5e-dac924b11144] Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 1.0ms)
+I, [2017-12-07T10:25:07.104507 #28423]  INFO -- : [e07c372c-00f2-4c39-9237-20729e1aa6fd] Started GET "/students/new" for 119.161.96.253 at 2017-12-07 10:25:07 +0000
+I, [2017-12-07T10:25:07.105459 #28423]  INFO -- : [e07c372c-00f2-4c39-9237-20729e1aa6fd] Processing by StudentsController#new as HTML
+I, [2017-12-07T10:25:07.123759 #28423]  INFO -- : [e07c372c-00f2-4c39-9237-20729e1aa6fd]   Rendering students/new.html.erb within layouts/application
+I, [2017-12-07T10:25:07.135453 #28423]  INFO -- : [e07c372c-00f2-4c39-9237-20729e1aa6fd]   Rendered students/_form.html.erb (10.4ms)
+I, [2017-12-07T10:25:07.135631 #28423]  INFO -- : [e07c372c-00f2-4c39-9237-20729e1aa6fd]   Rendered students/new.html.erb within layouts/application (11.8ms)
+I, [2017-12-07T10:25:07.135960 #28423]  INFO -- : [e07c372c-00f2-4c39-9237-20729e1aa6fd] Completed 200 OK in 30ms (Views: 12.4ms | ActiveRecord: 0.7ms)
+I, [2017-12-07T10:25:13.481608 #28423]  INFO -- : [1b1449a3-0837-42c8-b8a6-0ddc65f31d66] Started GET "/students" for 119.161.96.253 at 2017-12-07 10:25:13 +0000
+I, [2017-12-07T10:25:13.482349 #28423]  INFO -- : [1b1449a3-0837-42c8-b8a6-0ddc65f31d66] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:25:13.483213 #28423]  INFO -- : [1b1449a3-0837-42c8-b8a6-0ddc65f31d66]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:25:13.484073 #28423] DEBUG -- : [1b1449a3-0837-42c8-b8a6-0ddc65f31d66]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:25:13.484339 #28423]  INFO -- : [1b1449a3-0837-42c8-b8a6-0ddc65f31d66]   Rendered students/index.html.erb within layouts/application (1.1ms)
+I, [2017-12-07T10:25:13.484648 #28423]  INFO -- : [1b1449a3-0837-42c8-b8a6-0ddc65f31d66] Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+I, [2017-12-07T10:30:50.183460 #28423]  INFO -- : [533b9e3a-2d21-4cbb-81a0-bf3ae0bf2693] Started GET "/" for 119.161.96.253 at 2017-12-07 10:30:50 +0000
+I, [2017-12-07T10:30:50.184077 #28423]  INFO -- : [533b9e3a-2d21-4cbb-81a0-bf3ae0bf2693] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:30:50.184840 #28423]  INFO -- : [533b9e3a-2d21-4cbb-81a0-bf3ae0bf2693]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:30:50.185587 #28423] DEBUG -- : [533b9e3a-2d21-4cbb-81a0-bf3ae0bf2693]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:30:50.185797 #28423]  INFO -- : [533b9e3a-2d21-4cbb-81a0-bf3ae0bf2693]   Rendered students/index.html.erb within layouts/application (0.9ms)
+I, [2017-12-07T10:30:50.186063 #28423]  INFO -- : [533b9e3a-2d21-4cbb-81a0-bf3ae0bf2693] Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+I, [2017-12-07T10:30:54.506521 #28423]  INFO -- : [f901d42a-552e-4834-b45c-6c451ed442c2] Started GET "/" for 119.161.96.253 at 2017-12-07 10:30:54 +0000
+I, [2017-12-07T10:30:54.507041 #28423]  INFO -- : [f901d42a-552e-4834-b45c-6c451ed442c2] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:30:54.507781 #28423]  INFO -- : [f901d42a-552e-4834-b45c-6c451ed442c2]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:30:54.508557 #28423] DEBUG -- : [f901d42a-552e-4834-b45c-6c451ed442c2]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:30:54.508771 #28423]  INFO -- : [f901d42a-552e-4834-b45c-6c451ed442c2]   Rendered students/index.html.erb within layouts/application (0.9ms)
+I, [2017-12-07T10:30:54.509048 #28423]  INFO -- : [f901d42a-552e-4834-b45c-6c451ed442c2] Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+I, [2017-12-07T10:31:00.334663 #28423]  INFO -- : [94086fab-4d5a-4d0a-8908-963ec917fde8] Started GET "/students/new" for 119.161.96.253 at 2017-12-07 10:31:00 +0000
+I, [2017-12-07T10:31:00.335251 #28423]  INFO -- : [94086fab-4d5a-4d0a-8908-963ec917fde8] Processing by StudentsController#new as HTML
+I, [2017-12-07T10:31:00.336053 #28423]  INFO -- : [94086fab-4d5a-4d0a-8908-963ec917fde8]   Rendering students/new.html.erb within layouts/application
+I, [2017-12-07T10:31:00.339310 #28423]  INFO -- : [94086fab-4d5a-4d0a-8908-963ec917fde8]   Rendered students/_form.html.erb (3.1ms)
+I, [2017-12-07T10:31:00.339455 #28423]  INFO -- : [94086fab-4d5a-4d0a-8908-963ec917fde8]   Rendered students/new.html.erb within layouts/application (3.3ms)
+I, [2017-12-07T10:31:00.339708 #28423]  INFO -- : [94086fab-4d5a-4d0a-8908-963ec917fde8] Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+I, [2017-12-07T10:31:06.424571 #28423]  INFO -- : [28fea67b-a922-46a7-8e2e-ca9f638cb185] Started GET "/students" for 119.161.96.253 at 2017-12-07 10:31:06 +0000
+I, [2017-12-07T10:31:06.425108 #28423]  INFO -- : [28fea67b-a922-46a7-8e2e-ca9f638cb185] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:31:06.425873 #28423]  INFO -- : [28fea67b-a922-46a7-8e2e-ca9f638cb185]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:31:06.426640 #28423] DEBUG -- : [28fea67b-a922-46a7-8e2e-ca9f638cb185]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:31:06.426857 #28423]  INFO -- : [28fea67b-a922-46a7-8e2e-ca9f638cb185]   Rendered students/index.html.erb within layouts/application (0.9ms)
+I, [2017-12-07T10:31:06.427117 #28423]  INFO -- : [28fea67b-a922-46a7-8e2e-ca9f638cb185] Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+I, [2017-12-07T10:32:32.768660 #28423]  INFO -- : [827eb1c6-b284-4742-bbe6-494e8ce2cd32] Started GET "/students" for 119.161.96.253 at 2017-12-07 10:32:32 +0000
+I, [2017-12-07T10:32:32.769189 #28423]  INFO -- : [827eb1c6-b284-4742-bbe6-494e8ce2cd32] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:32:32.769948 #28423]  INFO -- : [827eb1c6-b284-4742-bbe6-494e8ce2cd32]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:32:32.770735 #28423] DEBUG -- : [827eb1c6-b284-4742-bbe6-494e8ce2cd32]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:32:32.770967 #28423]  INFO -- : [827eb1c6-b284-4742-bbe6-494e8ce2cd32]   Rendered students/index.html.erb within layouts/application (0.9ms)
+I, [2017-12-07T10:32:32.771253 #28423]  INFO -- : [827eb1c6-b284-4742-bbe6-494e8ce2cd32] Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+I, [2017-12-07T10:32:39.611582 #28423]  INFO -- : [8f2d0082-ecaa-49fe-ac58-39a131070dd2] Started GET "/students/new" for 119.161.96.253 at 2017-12-07 10:32:39 +0000
+I, [2017-12-07T10:32:39.612147 #28423]  INFO -- : [8f2d0082-ecaa-49fe-ac58-39a131070dd2] Processing by StudentsController#new as HTML
+I, [2017-12-07T10:32:39.612969 #28423]  INFO -- : [8f2d0082-ecaa-49fe-ac58-39a131070dd2]   Rendering students/new.html.erb within layouts/application
+I, [2017-12-07T10:32:39.616209 #28423]  INFO -- : [8f2d0082-ecaa-49fe-ac58-39a131070dd2]   Rendered students/_form.html.erb (3.1ms)
+I, [2017-12-07T10:32:39.616326 #28423]  INFO -- : [8f2d0082-ecaa-49fe-ac58-39a131070dd2]   Rendered students/new.html.erb within layouts/application (3.3ms)
+I, [2017-12-07T10:32:39.616615 #28423]  INFO -- : [8f2d0082-ecaa-49fe-ac58-39a131070dd2] Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+I, [2017-12-07T10:33:04.734020 #28423]  INFO -- : [43adf961-b126-46cb-a08b-d9f4bb73ed31] Started GET "/students" for 119.161.96.253 at 2017-12-07 10:33:04 +0000
+I, [2017-12-07T10:33:04.734570 #28423]  INFO -- : [43adf961-b126-46cb-a08b-d9f4bb73ed31] Processing by StudentsController#index as HTML
+I, [2017-12-07T10:33:04.735280 #28423]  INFO -- : [43adf961-b126-46cb-a08b-d9f4bb73ed31]   Rendering students/index.html.erb within layouts/application
+D, [2017-12-07T10:33:04.736040 #28423] DEBUG -- : [43adf961-b126-46cb-a08b-d9f4bb73ed31]   [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT `students`.* FROM `students`[0m
+I, [2017-12-07T10:33:04.736256 #28423]  INFO -- : [43adf961-b126-46cb-a08b-d9f4bb73ed31]   Rendered students/index.html.erb within layouts/application (0.9ms)
+I, [2017-12-07T10:33:04.736559 #28423]  INFO -- : [43adf961-b126-46cb-a08b-d9f4bb73ed31] Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)

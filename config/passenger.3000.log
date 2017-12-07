@@ -1,0 +1,17 @@
+[ N 2017-11-30 12:31:15.0060 12754/T1 age/Wat/WatchdogMain.cpp:1267 ]: Starting Passenger watchdog...
+[ N 2017-11-30 12:31:15.0135 12757/T1 age/Cor/CoreMain.cpp:1165 ]: Starting Passenger core...
+[ N 2017-11-30 12:31:15.0137 12757/T1 age/Cor/CoreMain.cpp:249 ]: Passenger core running in multi-application mode.
+[ N 2017-11-30 12:31:15.0180 12757/T1 age/Cor/CoreMain.cpp:905 ]: Passenger core online, PID 12757
+2017/11/30 12:31:17 [error] 12774#0: *4 "/var/www/schoolay/config/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"
+[ N 2017-11-30 12:31:18.1374 12757/T5 age/Cor/SecurityUpdateChecker.h:374 ]: Security update check: no update found (next check in 24 hours)
+2017/11/30 12:31:32 [error] 12774#0: *5 "/var/www/schoolay/config/public/index.html" is not found (2: No such file or directory), client: 106.51.240.93, server: _, request: "GET / HTTP/1.1", host: "www.yourschoolstuffs.com:3000"
+
+[ N 2017-11-30 12:33:48.1394 12757/T8 age/Cor/CoreMain.cpp:589 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2017-11-30 12:33:48.1394 12757/T1 age/Cor/CoreMain.cpp:1080 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2017-11-30 12:33:48.1395 12757/Tc Ser/Server.h:886 ]: [ApiServer] Freed 0 spare client objects
+[ N 2017-11-30 12:33:48.1395 12757/Tc Ser/Server.h:531 ]: [ApiServer] Shutdown finished
+[ N 2017-11-30 12:33:48.1396 12757/T8 Ser/Server.h:886 ]: [ServerThr.1] Freed 128 spare client objects
+[ N 2017-11-30 12:33:48.1396 12757/T8 Ser/Server.h:531 ]: [ServerThr.1] Shutdown finished
+[ N 2017-11-30 12:33:48.1398 12757/Ta Ser/Server.h:886 ]: [ServerThr.2] Freed 128 spare client objects
+[ N 2017-11-30 12:33:48.1398 12757/Ta Ser/Server.h:531 ]: [ServerThr.2] Shutdown finished
+[ N 2017-11-30 12:33:48.1710 12757/T1 age/Cor/CoreMain.cpp:1150 ]: Passenger core shutdown finished

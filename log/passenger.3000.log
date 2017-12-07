@@ -1,0 +1,111 @@
+[ N 2017-11-30 10:06:41.6581 7417/T1 age/Wat/WatchdogMain.cpp:1267 ]: Starting Passenger watchdog...
+[ N 2017-11-30 10:06:41.6718 7420/T1 age/Cor/CoreMain.cpp:1165 ]: Starting Passenger core...
+[ N 2017-11-30 10:06:41.6719 7420/T1 age/Cor/CoreMain.cpp:249 ]: Passenger core running in multi-application mode.
+[ N 2017-11-30 10:06:41.6811 7420/T1 age/Cor/CoreMain.cpp:905 ]: Passenger core online, PID 7420
+App 7456 stdout: 
+[ N 2017-11-30 10:06:44.3343 7420/T5 age/Cor/SecurityUpdateChecker.h:374 ]: Security update check: no update found (next check in 24 hours)
+App 7478 stdout: 
+
+[ N 2017-11-30 12:22:40.5074 7420/T8 age/Cor/CoreMain.cpp:589 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2017-11-30 12:22:40.5074 7420/T1 age/Cor/CoreMain.cpp:1080 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2017-11-30 12:22:40.5074 7420/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 7478, application /var/www/schoolay/public (development)
+[ N 2017-11-30 12:22:40.5076 7420/T8 Ser/Server.h:886 ]: [ServerThr.1] Freed 128 spare client objects
+[ N 2017-11-30 12:22:40.5076 7420/T8 Ser/Server.h:531 ]: [ServerThr.1] Shutdown finished
+[ N 2017-11-30 12:22:40.5077 7420/Ta Ser/Server.h:886 ]: [ServerThr.2] Freed 128 spare client objects
+[ N 2017-11-30 12:22:40.5077 7420/Ta Ser/Server.h:531 ]: [ServerThr.2] Shutdown finished
+[ N 2017-11-30 12:22:40.5079 7420/Tc Ser/Server.h:886 ]: [ApiServer] Freed 0 spare client objects
+[ N 2017-11-30 12:22:40.5079 7420/Tc Ser/Server.h:531 ]: [ApiServer] Shutdown finished
+[ N 2017-11-30 12:22:40.5079 7420/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 7478, application /var/www/schoolay/public (development)
+[ N 2017-11-30 12:22:40.7410 7420/T1 age/Cor/CoreMain.cpp:1150 ]: Passenger core shutdown finished
+[ N 2017-11-30 12:23:06.3256 12536/T1 age/Wat/WatchdogMain.cpp:1267 ]: Starting Passenger watchdog...
+[ N 2017-11-30 12:23:06.3328 12539/T1 age/Cor/CoreMain.cpp:1165 ]: Starting Passenger core...
+[ N 2017-11-30 12:23:06.3329 12539/T1 age/Cor/CoreMain.cpp:249 ]: Passenger core running in multi-application mode.
+[ N 2017-11-30 12:23:06.3369 12539/T1 age/Cor/CoreMain.cpp:905 ]: Passenger core online, PID 12539
+App 12576 stdout: 
+[ N 2017-11-30 12:23:09.0142 12539/T5 age/Cor/SecurityUpdateChecker.h:374 ]: Security update check: no update found (next check in 24 hours)
+App 12598 stdout: 
+
+[ N 2017-11-30 12:25:11.1184 12539/T8 age/Cor/CoreMain.cpp:589 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2017-11-30 12:25:11.1184 12539/T1 age/Cor/CoreMain.cpp:1080 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2017-11-30 12:25:11.1184 12539/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 12598, application /var/www/schoolay/public (development)
+[ N 2017-11-30 12:25:11.1186 12539/T8 Ser/Server.h:886 ]: [ServerThr.1] Freed 128 spare client objects
+[ N 2017-11-30 12:25:11.1186 12539/T8 Ser/Server.h:531 ]: [ServerThr.1] Shutdown finished
+[ N 2017-11-30 12:25:11.1187 12539/Ta Ser/Server.h:886 ]: [ServerThr.2] Freed 128 spare client objects
+[ N 2017-11-30 12:25:11.1187 12539/Ta Ser/Server.h:531 ]: [ServerThr.2] Shutdown finished
+[ N 2017-11-30 12:25:11.1188 12539/Tc Ser/Server.h:886 ]: [ApiServer] Freed 0 spare client objects
+[ N 2017-11-30 12:25:11.1188 12539/Tc Ser/Server.h:531 ]: [ApiServer] Shutdown finished
+[ N 2017-11-30 12:25:11.1189 12539/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 12598, application /var/www/schoolay/public (development)
+[ N 2017-11-30 12:25:11.3510 12539/T1 age/Cor/CoreMain.cpp:1150 ]: Passenger core shutdown finished
+[ N 2017-11-30 12:35:05.9740 12832/T1 age/Wat/WatchdogMain.cpp:1267 ]: Starting Passenger watchdog...
+[ N 2017-11-30 12:35:05.9812 12835/T1 age/Cor/CoreMain.cpp:1165 ]: Starting Passenger core...
+[ N 2017-11-30 12:35:05.9814 12835/T1 age/Cor/CoreMain.cpp:249 ]: Passenger core running in multi-application mode.
+[ N 2017-11-30 12:35:05.9853 12835/T1 age/Cor/CoreMain.cpp:905 ]: Passenger core online, PID 12835
+App 12871 stdout: 
+[ N 2017-11-30 12:35:08.9067 12835/T5 age/Cor/SecurityUpdateChecker.h:374 ]: Security update check: no update found (next check in 24 hours)
+App 12893 stdout: 
+
+[ N 2017-11-30 12:35:25.0181 12835/T8 age/Cor/CoreMain.cpp:589 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2017-11-30 12:35:25.0181 12835/T1 age/Cor/CoreMain.cpp:1080 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2017-11-30 12:35:25.0181 12835/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 12893, application /var/www/schoolay/public (development)
+[ N 2017-11-30 12:35:25.0184 12835/T8 Ser/Server.h:886 ]: [ServerThr.1] Freed 128 spare client objects
+[ N 2017-11-30 12:35:25.0184 12835/Tc Ser/Server.h:886 ]: [ApiServer] Freed 0 spare client objects
+[ N 2017-11-30 12:35:25.0184 12835/Tc Ser/Server.h:531 ]: [ApiServer] Shutdown finished
+[ N 2017-11-30 12:35:25.0184 12835/T8 Ser/Server.h:531 ]: [ServerThr.1] Shutdown finished
+[ N 2017-11-30 12:35:25.0185 12835/Ta Ser/Server.h:886 ]: [ServerThr.2] Freed 128 spare client objects
+[ N 2017-11-30 12:35:25.0185 12835/Ta Ser/Server.h:531 ]: [ServerThr.2] Shutdown finished
+[ N 2017-11-30 12:35:25.0185 12835/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 12893, application /var/www/schoolay/public (development)
+[ N 2017-11-30 12:35:25.2506 12835/T1 age/Cor/CoreMain.cpp:1150 ]: Passenger core shutdown finished
+[ N 2017-11-30 12:36:42.8561 12938/T1 age/Wat/WatchdogMain.cpp:1267 ]: Starting Passenger watchdog...
+[ N 2017-11-30 12:36:42.8631 12941/T1 age/Cor/CoreMain.cpp:1165 ]: Starting Passenger core...
+[ N 2017-11-30 12:36:42.8633 12941/T1 age/Cor/CoreMain.cpp:249 ]: Passenger core running in multi-application mode.
+[ N 2017-11-30 12:36:42.8672 12941/T1 age/Cor/CoreMain.cpp:905 ]: Passenger core online, PID 12941
+App 12977 stdout: 
+[ N 2017-11-30 12:36:45.5335 12941/T5 age/Cor/SecurityUpdateChecker.h:374 ]: Security update check: no update found (next check in 24 hours)
+App 12993 stdout: 
+App 12977 stderr: [ 2017-11-30 12:36:46.8570 12993/0x00555eb1922628(Worker 1) utils.rb ]: *** Exception RuntimeError in Rack application object (Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`) (process 12993, thread 0x00555eb1922628(Worker 1)):
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/passenger-5.1.12/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/passenger-5.1.12/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:160:in `accept_and_process_next_request'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/passenger-5.1.12/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/passenger-5.1.12/src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/passenger-5.1.12/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+[ W 2017-11-30 12:36:46.8572 12941/T8 age/Cor/Con/InternalUtils.cpp:96 ]: [Client 1-1] Sending 502 response: application did not send a complete response
+App 12977 stderr: [ 2017-11-30 12:37:16.7697 12993/0x00555eb1922628(Worker 1) utils.rb ]: *** Exception RuntimeError in Rack application object (Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`) (process 12993, thread 0x00555eb1922628(Worker 1)):
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/passenger-5.1.12/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/passenger-5.1.12/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/passenger-5.1.12/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/passenger-5.1.12/src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+App 12977 stderr: 	from /usr/local/lib/ruby/gems/2.3.0/gems/passenger-5.1.12/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+[ W 2017-11-30 12:37:16.7698 12941/Ta age/Cor/Con/InternalUtils.cpp:96 ]: [Client 2-1] Sending 502 response: application did not send a complete response
+
+[ N 2017-11-30 12:38:19.2463 12941/T8 age/Cor/CoreMain.cpp:589 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2017-11-30 12:38:19.2463 12941/T1 age/Cor/CoreMain.cpp:1080 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2017-11-30 12:38:19.2463 12941/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 12993, application /var/www/schoolay/public (production)
+[ N 2017-11-30 12:38:19.2465 12941/T8 Ser/Server.h:886 ]: [ServerThr.1] Freed 128 spare client objects
+[ N 2017-11-30 12:38:19.2465 12941/T8 Ser/Server.h:531 ]: [ServerThr.1] Shutdown finished
+[ N 2017-11-30 12:38:19.2466 12941/Ta Ser/Server.h:886 ]: [ServerThr.2] Freed 128 spare client objects
+[ N 2017-11-30 12:38:19.2466 12941/Ta Ser/Server.h:531 ]: [ServerThr.2] Shutdown finished
+[ N 2017-11-30 12:38:19.2468 12941/Tc Ser/Server.h:886 ]: [ApiServer] Freed 0 spare client objects
+[ N 2017-11-30 12:38:19.2468 12941/Tc Ser/Server.h:531 ]: [ApiServer] Shutdown finished
+[ N 2017-11-30 12:38:19.2469 12941/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 12993, application /var/www/schoolay/public (production)
+[ N 2017-11-30 12:38:19.4785 12941/T1 age/Cor/CoreMain.cpp:1150 ]: Passenger core shutdown finished
+[ N 2017-11-30 12:41:41.3741 13068/T1 age/Wat/WatchdogMain.cpp:1267 ]: Starting Passenger watchdog...
+[ N 2017-11-30 12:41:41.3812 13071/T1 age/Cor/CoreMain.cpp:1165 ]: Starting Passenger core...
+[ N 2017-11-30 12:41:41.3813 13071/T1 age/Cor/CoreMain.cpp:249 ]: Passenger core running in multi-application mode.
+[ N 2017-11-30 12:41:41.3852 13071/T1 age/Cor/CoreMain.cpp:905 ]: Passenger core online, PID 13071
+App 13107 stdout: 
+[ N 2017-11-30 12:41:44.2903 13071/T5 age/Cor/SecurityUpdateChecker.h:374 ]: Security update check: no update found (next check in 24 hours)
+App 13123 stdout: 
+
+[ N 2017-12-01 03:44:07.3265 13071/T8 age/Cor/CoreMain.cpp:589 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2017-12-01 03:44:07.3271 13071/T1 age/Cor/CoreMain.cpp:1080 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2017-12-01 03:44:07.3271 13071/T1 age/Cor/CoreMain.cpp:994 ]: Checking whether to disconnect long-running connections for process 13123, application /var/www/schoolay/public (production)
